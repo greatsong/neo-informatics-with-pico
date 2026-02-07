@@ -9,7 +9,7 @@
         <meta name="description" content="라즈베리파이 피코2와 Grove 센서를 활용하여 프로그래밍 기초부터 AI 협업까지, 실생활 문제해결 역량을 키우는 고등학생 맞춤 코딩 입문서입니다.">
       
       
-        <meta name="author" content="Created with Data-AI-Book Generator">
+        <meta name="author" content="Created with EduFlow">
       
       
       
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-3-led-" class="md-skip">
+        <a href="#chapter-03-led-" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -535,7 +535,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        🎯 이 장의 학습 목표
       
     </span>
   </a>
@@ -544,6 +544,17 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 미리 알아야 할 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -555,10 +566,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gpio-general-purpose-inputoutput" class="md-nav__link">
+  <a href="#1-gpio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: GPIO (General Purpose Input/Output)
+        개념 1: GPIO 핀 — 피코의 "소통하는 문" 🚪
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-1-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: 디지털 출력 — 켜거나(1) 끄거나(0)
       
     </span>
   </a>
@@ -571,7 +593,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔨 따라하기
@@ -597,7 +619,29 @@
   <a href="#step-2-led" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: LED 깜빡이기
+        Step 2: LED 끄기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: LED 깜빡이기 — 반복의 마법 ✨
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 속도 바꿔보기 🎮
       
     </span>
   </a>
@@ -610,7 +654,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
         📝 전체 코드
@@ -621,7 +665,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         ⚠️ 주의할 점
@@ -632,7 +676,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         ✅ 점검하기
@@ -643,10 +687,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🚀 다음 장 미리보기
+        🔗 다음 장 미리보기
       
     </span>
   </a>
@@ -2111,7 +2155,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        🎯 이 장의 학습 목표
       
     </span>
   </a>
@@ -2120,6 +2164,17 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 미리 알아야 할 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -2131,10 +2186,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#gpio-general-purpose-inputoutput" class="md-nav__link">
+  <a href="#1-gpio" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: GPIO (General Purpose Input/Output)
+        개념 1: GPIO 핀 — 피코의 "소통하는 문" 🚪
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-1-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: 디지털 출력 — 켜거나(1) 끄거나(0)
       
     </span>
   </a>
@@ -2147,7 +2213,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔨 따라하기
@@ -2173,7 +2239,29 @@
   <a href="#step-2-led" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: LED 깜빡이기
+        Step 2: LED 끄기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: LED 깜빡이기 — 반복의 마법 ✨
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 속도 바꿔보기 🎮
       
     </span>
   </a>
@@ -2186,7 +2274,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
         📝 전체 코드
@@ -2197,7 +2285,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         ⚠️ 주의할 점
@@ -2208,7 +2296,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         ✅ 점검하기
@@ -2219,10 +2307,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🚀 다음 장 미리보기
+        🔗 다음 장 미리보기
       
     </span>
   </a>
@@ -2246,73 +2334,147 @@
 
 
 
-<h1 id="chapter-3-led-">Chapter 3: LED 깜빡이기 - 나의 첫 하드웨어 제어<a class="headerlink" href="#chapter-3-led-" title="Permanent link">&para;</a></h1>
-<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h1 id="chapter-03-led-">Chapter 03: LED 깜빡이기 - 나의 첫 하드웨어 제어<a class="headerlink" href="#chapter-03-led-" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="_1">🎯 이 장의 학습 목표<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>이 장을 마치면 다음을 할 수 있습니다:</p>
 <ul>
 <li>[ ] 피코2의 내장 LED를 코드로 켜고 끌 수 있다</li>
-<li>[ ] GPIO 핀의 개념을 이해한다</li>
+<li>[ ] GPIO 핀의 개념과 디지털 출력을 이해한다</li>
 <li>[ ] 무한 반복문으로 LED를 깜빡이게 할 수 있다</li>
 </ul>
-<blockquote>
-<p>⏱️ <strong>예상 학습 시간</strong>: 약 50분</p>
-</blockquote>
+<p><strong>예상 학습 시간: 약 50분</strong></p>
+<h2 id="_2">📚 미리 알아야 할 것<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Thonny에서 피코2에 코드를 입력하고 실행하는 방법 (Chapter 02)</li>
+<li><code>print()</code> 함수로 글자를 출력해본 경험</li>
+</ul>
 <hr />
-<h2 id="_2">📚 핵심 개념<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="gpio-general-purpose-inputoutput">개념: GPIO (General Purpose Input/Output)<a class="headerlink" href="#gpio-general-purpose-inputoutput" title="Permanent link">&para;</a></h3>
-<p><strong>비유로 시작할게요!</strong></p>
-<p>GPIO는 마치 <strong>"집의 현관문"</strong> 같아요. 문을 통해 사람이 드나들듯, GPIO 핀을 통해 피코와 외부 장치가 신호를 주고받아요.</p>
-<p><strong>정확한 정의:</strong>
-- GPIO = 범용 입출력 핀
-- 피코가 외부 세상과 소통하는 통로
-- 전기 신호를 내보내거나(출력) 받아들일 수(입력) 있음</p>
+<h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1-gpio">개념 1: GPIO 핀 — 피코의 "소통하는 문" 🚪<a class="headerlink" href="#1-gpio" title="Permanent link">&para;</a></h3>
+<p>피코2 보드를 자세히 보면 양쪽에 작은 금속 구멍들이 줄지어 있죠? 이것이 바로 <strong>GPIO 핀</strong>입니다.</p>
+<p><strong>GPIO</strong>는 <strong>G</strong>eneral <strong>P</strong>urpose <strong>I</strong>nput/<strong>O</strong>utput의 약자로, "범용 입출력"이라는 뜻이에요.</p>
+<blockquote>
+<p>🏠 <strong>비유로 이해하기</strong>: GPIO 핀은 집의 <strong>문</strong>과 같아요. 문을 통해 택배를 받을 수도 있고(입력), 편지를 내보낼 수도 있죠(출력). 피코2는 이 문들을 통해 바깥 세상의 부품들과 소통합니다.</p>
+</blockquote>
+<p>오늘은 이 문을 <strong>출력 모드</strong>로 사용해서, 피코2가 LED에게 "켜져!", "꺼져!" 신호를 보내볼 거예요.</p>
+<h3 id="2-1-0">개념 2: 디지털 출력 — 켜거나(1) 끄거나(0)<a class="headerlink" href="#2-1-0" title="Permanent link">&para;</a></h3>
+<p>디지털 출력은 아주 단순합니다. 딱 <strong>두 가지 상태</strong>만 있어요:</p>
+<table>
+<thead>
+<tr>
+<th>값</th>
+<th>의미</th>
+<th>LED 상태</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1</code> (HIGH)</td>
+<td>전기가 흐른다</td>
+<td>💡 켜짐</td>
+</tr>
+<tr>
+<td><code>0</code> (LOW)</td>
+<td>전기가 안 흐른다</td>
+<td>⚫ 꺼짐</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🔦 <strong>비유로 이해하기</strong>: 방의 조명 스위치와 똑같아요! 올리면(1) 불이 켜지고, 내리면(0) 불이 꺼지죠. 우리는 코드로 이 스위치를 조작하는 겁니다.</p>
+</blockquote>
 <div class="mermaid">flowchart LR
-    A[🧠 피코2] --&gt;|GPIO 핀| B[💡 LED]
+    A["🖥️ 코드 명령&lt;br&gt;value(1)"] --&gt; B["📍 GPIO 핀&lt;br&gt;(소통하는 문)"] --&gt; C["💡 LED 켜짐!"]
     style A fill:#e3f2fd,stroke:#1976d2
-    style B fill:#fff9c4,stroke:#f9a825</div>
-<blockquote>
-<p>💡 <strong>기억하세요</strong>: 피코2의 내장 LED는 GPIO 25번 핀에 연결되어 있어요!</p>
-</blockquote>
+    style B fill:#fff3e0,stroke:#f57c00
+    style C fill:#e8f5e9,stroke:#388e3c</div>
 <hr />
-<h2 id="_3">🔨 따라하기<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h2 id="_4">🔨 따라하기<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>🎉 <strong>좋은 소식!</strong> 피코2에는 LED가 하나 내장되어 있어서, 별도 부품 없이 바로 실습할 수 있어요!</p>
+</blockquote>
 <h3 id="step-1-led">Step 1: LED 켜기<a class="headerlink" href="#step-1-led" title="Permanent link">&para;</a></h3>
-<p><strong>코드</strong>:
+<p>Thonny를 열고 피코2를 연결한 뒤, 아래 코드를 입력하세요.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span>  <span class="c1"># Pin 기능 가져오기</span>
+
+<span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="s2">&quot;LED&quot;</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>  <span class="c1"># 내장 LED를 출력 모드로 설정</span>
+<span class="n">led</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># LED 켜기!</span>
+</code></pre></div>
+<p><strong>실행 결과</strong>: 피코2 보드의 초록색 LED가 <strong>켜집니다!</strong> 🎉</p>
+<blockquote>
+<p>💡 <strong>코드 해석</strong>: 
+- <code>Pin("LED", Pin.OUT)</code> → "LED"라는 이름의 핀을 <strong>출력(OUT)</strong> 모드로 설정
+- <code>led.value(1)</code> → 그 핀에 <strong>1(HIGH)</strong> 신호를 보내서 LED를 켬</p>
+</blockquote>
+<h3 id="step-2-led">Step 2: LED 끄기<a class="headerlink" href="#step-2-led" title="Permanent link">&para;</a></h3>
+<p>이번엔 <code>value(0)</code>으로 바꿔볼까요?</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span>
 
-<span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>  <span class="c1"># 25번 핀을 출력 모드로 설정</span>
-<span class="n">led</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>            <span class="c1"># LED 켜기 (1 = 켜짐)</span>
-</code></pre></div></p>
-<p><strong>실행 결과</strong>:
-<div class="highlight"><pre><span></span><code>(피코2의 초록색 LED가 켜집니다!)
-</code></pre></div></p>
+<span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="s2">&quot;LED&quot;</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+<span class="n">led</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># LED 끄기!</span>
+</code></pre></div>
+<p><strong>실행 결과</strong>: LED가 <strong>꺼집니다.</strong> </p>
 <blockquote>
-<p>✅ <strong>체크포인트</strong>: 피코 보드의 LED가 켜졌나요?</p>
+<p>✅ <strong>체크포인트</strong>: <code>value(1)</code>로 켜지고, <code>value(0)</code>으로 꺼지는 것을 확인했나요? 축하해요! 코드로 하드웨어를 제어한 첫 경험입니다!</p>
+</blockquote>
+<h3 id="step-3-led">Step 3: LED 깜빡이기 — 반복의 마법 ✨<a class="headerlink" href="#step-3-led" title="Permanent link">&para;</a></h3>
+<p>LED를 계속 깜빡이게 하려면 <strong>"켜고 → 기다리고 → 끄고 → 기다리고"</strong>를 반복해야 해요. 이때 <code>while True:</code>라는 <strong>무한 반복문</strong>을 사용합니다.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span>
+<span class="kn">import</span> <span class="nn">time</span>  <span class="c1"># 시간 관련 기능 가져오기</span>
+
+<span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="s2">&quot;LED&quot;</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>        <span class="c1"># 무한 반복 시작!</span>
+    <span class="n">led</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>   <span class="c1"># LED 켜기</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span> <span class="c1"># 0.5초 기다리기</span>
+    <span class="n">led</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>   <span class="c1"># LED 끄기</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span> <span class="c1"># 0.5초 기다리기</span>
+</code></pre></div>
+<p><strong>실행 결과</strong>: LED가 <strong>0.5초 간격으로 깜빡깜빡</strong> 반복합니다! ✨</p>
+<blockquote>
+<p>⏹️ <strong>멈추는 방법</strong>: Thonny에서 <strong>빨간 Stop 버튼</strong>을 누르면 프로그램이 멈춰요.</p>
+</blockquote>
+<div class="mermaid">flowchart TD
+    A["💡 LED 켜기&lt;br&gt;value(1)"] --&gt; B["⏱️ 0.5초 대기"]
+    B --&gt; C["⚫ LED 끄기&lt;br&gt;value(0)"]
+    C --&gt; D["⏱️ 0.5초 대기"]
+    D --&gt; A
+    style A fill:#e8f5e9,stroke:#388e3c
+    style C fill:#fce4ec,stroke:#c62828</div>
+<h3 id="step-4">Step 4: 속도 바꿔보기 🎮<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
+<p><code>time.sleep()</code> 안의 숫자를 바꾸면 깜빡이는 속도가 달라져요. 직접 바꿔보세요!</p>
+<table>
+<thead>
+<tr>
+<th>sleep 값</th>
+<th>효과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>0.1</code></td>
+<td>아주 빠르게 깜빡</td>
+</tr>
+<tr>
+<td><code>0.5</code></td>
+<td>적당한 속도</td>
+</tr>
+<tr>
+<td><code>2.0</code></td>
+<td>느긋하게 깜빡</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>잠깐!</strong> 여기까지 이해가 잘 되셨나요? 숫자를 이것저것 바꿔보는 것이 가장 좋은 학습법이에요. 마음껏 실험해보세요!</p>
 </blockquote>
 <hr />
-<h3 id="step-2-led">Step 2: LED 깜빡이기<a class="headerlink" href="#step-2-led" title="Permanent link">&para;</a></h3>
-<p><strong>코드</strong>:
+<h2 id="_5">📝 전체 코드<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span>
 <span class="kn">import</span> <span class="nn">time</span>
 
-<span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
-
-<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>           <span class="c1"># 무한 반복</span>
-    <span class="n">led</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>      <span class="c1"># 켜기</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>   <span class="c1"># 0.5초 대기</span>
-    <span class="n">led</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>      <span class="c1"># 끄기</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>   <span class="c1"># 0.5초 대기</span>
-</code></pre></div></p>
-<p><strong>실행 결과</strong>:
-<div class="highlight"><pre><span></span><code>(LED가 0.5초 간격으로 깜빡깜빡!)
-</code></pre></div></p>
-<blockquote>
-<p>🎉 <strong>축하해요!</strong> 코드로 하드웨어를 제어하는 첫 경험이에요!</p>
-</blockquote>
-<hr />
-<h2 id="_4">📝 전체 코드<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span>
-<span class="kn">import</span> <span class="nn">time</span>
-
-<span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
+<span class="n">led</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="s2">&quot;LED&quot;</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">OUT</span><span class="p">)</span>
 
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
     <span class="n">led</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
@@ -2321,28 +2483,44 @@
     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
 </code></pre></div>
 <hr />
-<h2 id="_5">⚠️ 주의할 점<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p><strong><code>while True</code>는 무한 반복이에요!</strong>
-- 프로그램을 멈추려면 Thonny의 <strong>빨간 정지 버튼(■)</strong>을 클릭하세요</p>
+<h2 id="_6">⚠️ 주의할 점<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p><strong>1. <code>time.sleep()</code>을 빼먹으면?</strong>
+LED가 너무 빠르게 켜졌다 꺼져서 사람 눈에는 계속 켜져 있는 것처럼 보여요. 반드시 대기 시간을 넣어주세요!</p>
+<p><strong>2. <code>while True:</code> 아래 코드는 들여쓰기 필수!</strong>
+<div class="highlight"><pre><span></span><code><span class="c1"># ❌ 잘못된 예 (들여쓰기 없음)</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<span class="n">led</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>    <span class="c1"># 에러 발생!</span>
+
+<span class="c1"># ✅ 올바른 예 (스페이스 4칸)</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">led</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># 정상 동작!</span>
+</code></pre></div></p>
 <hr />
-<h2 id="_6">✅ 점검하기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<ol>
-<li>GPIO 핀은 어떤 역할을 하나요?</li>
-</ol>
+<h2 id="_7">✅ 점검하기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p><strong>1. GPIO 핀을 한마디로 설명하면?</strong></p>
 <details><summary>정답 확인</summary>
-피코가 외부 장치와 신호를 주고받는 통로예요.
+
+피코2가 외부 부품과 **소통하는 통로(문)**입니다. 입력을 받거나 출력을 내보낼 수 있어요.
+
 </details>
 
-<ol>
-<li><code>time.sleep(0.5)</code>를 <code>time.sleep(2)</code>로 바꾸면 어떻게 될까요?</li>
-</ol>
+<p><strong>2. <code>led.value(1)</code>과 <code>led.value(0)</code>의 차이는?</strong></p>
 <details><summary>정답 확인</summary>
-LED가 2초 간격으로 천천히 깜빡여요!
+
+`value(1)`은 LED를 **켜는** 것(전기 흐름), `value(0)`은 LED를 **끄는** 것(전기 차단)입니다.
+
+</details>
+
+<p><strong>3. LED를 1초 간격으로 깜빡이게 하려면 코드를 어떻게 바꿀까요?</strong></p>
+<details><summary>정답 확인</summary>
+
+`time.sleep(0.5)`를 `time.sleep(1)`로 바꾸면 됩니다!
+
 </details>
 
 <hr />
-<h2 id="_7">🚀 다음 장 미리보기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<p>다음 장에서는 <strong>외부 LED를 브레드보드에 연결</strong>해서 제어해볼 거예요. 회로를 직접 만드는 재미를 느껴보세요!</p>
+<h2 id="_8">🔗 다음 장 미리보기<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>다음 장에서는 <strong>버튼을 연결해서 누르면 LED가 켜지는</strong> 프로그램을 만들어볼 거예요. 오늘은 피코2가 일방적으로 신호를 <strong>내보냈다면</strong>, 다음엔 신호를 <strong>받아들이는</strong> 방법을 배웁니다. GPIO의 <strong>입력(Input)</strong> 기능을 경험해보세요! 🚀</p>
 
 
 

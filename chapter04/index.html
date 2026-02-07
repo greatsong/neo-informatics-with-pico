@@ -9,7 +9,7 @@
         <meta name="description" content="라즈베리파이 피코2와 Grove 센서를 활용하여 프로그래밍 기초부터 AI 협업까지, 실생활 문제해결 역량을 키우는 고등학생 맞춤 코딩 입문서입니다.">
       
       
-        <meta name="author" content="Created with Data-AI-Book Generator">
+        <meta name="author" content="Created with EduFlow">
       
       
       
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-4-grove" class="md-skip">
+        <a href="#chapter-04-grove" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -563,7 +563,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        🎯 이 장의 학습 목표
       
     </span>
   </a>
@@ -572,6 +572,17 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 미리 알아야 할 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -583,38 +594,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#grove" class="md-nav__link">
+  <a href="#1-grove" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: Grove 시스템
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔨 따라하기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-grove" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: Grove 쉴드 포트 살펴보기
+        개념 1: Grove 시스템 — 레고 블록 같은 센서 연결
       
     </span>
   </a>
@@ -622,10 +605,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-2" class="md-nav__link">
+  <a href="#2-grove" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 쉴드를 피코2에 장착하기
+        개념 2: Grove 쉴드와 포트의 종류
       
     </span>
   </a>
@@ -641,6 +624,78 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
+        🔨 따라하기: 버튼 센서로 신호 읽기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기: 버튼 센서로 신호 읽기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 하드웨어 연결
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-thonny" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Thonny에서 코드 작성
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 실행하고 결과 확인
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 프로그램 멈추기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 전체 코드
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         ⚠️ 주의할 점
       
     </span>
@@ -649,7 +704,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         ✅ 점검하기
@@ -660,7 +715,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔗 다음 장 미리보기
@@ -2100,7 +2155,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        🎯 이 장의 학습 목표
       
     </span>
   </a>
@@ -2109,6 +2164,17 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 미리 알아야 할 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -2120,38 +2186,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#grove" class="md-nav__link">
+  <a href="#1-grove" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: Grove 시스템
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔨 따라하기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-grove" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: Grove 쉴드 포트 살펴보기
+        개념 1: Grove 시스템 — 레고 블록 같은 센서 연결
       
     </span>
   </a>
@@ -2159,10 +2197,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2-2" class="md-nav__link">
+  <a href="#2-grove" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 쉴드를 피코2에 장착하기
+        개념 2: Grove 쉴드와 포트의 종류
       
     </span>
   </a>
@@ -2178,6 +2216,78 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
+        🔨 따라하기: 버튼 센서로 신호 읽기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기: 버튼 센서로 신호 읽기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 하드웨어 연결
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-thonny" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Thonny에서 코드 작성
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 실행하고 결과 확인
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 프로그램 멈추기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📝 전체 코드
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
         ⚠️ 주의할 점
       
     </span>
@@ -2186,7 +2296,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         ✅ 점검하기
@@ -2197,7 +2307,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔗 다음 장 미리보기
@@ -2224,121 +2334,208 @@
 
 
 
-<h1 id="chapter-4-grove">Chapter 4: Grove 센서 시스템 이해하기<a class="headerlink" href="#chapter-4-grove" title="Permanent link">&para;</a></h1>
-<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<ul>
-<li>[ ] Grove 시스템의 장점을 설명할 수 있다</li>
-<li>[ ] Grove 쉴드의 포트 종류를 구분할 수 있다</li>
-</ul>
-<blockquote>
-<p>⏱️ <strong>예상 학습 시간</strong>: 약 15분</p>
-</blockquote>
+<h1 id="chapter-04-grove">Chapter 04: Grove 센서 시스템 이해하기<a class="headerlink" href="#chapter-04-grove" title="Permanent link">&para;</a></h1>
 <hr />
-<h2 id="_2">📚 핵심 개념<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="grove">개념: Grove 시스템<a class="headerlink" href="#grove" title="Permanent link">&para;</a></h3>
-<p><strong>비유로 시작해요!</strong></p>
-<p>Grove는 마치 <strong>레고 블록</strong>과 같아요. 복잡한 배선 없이 케이블 하나로 "딸깍" 연결하면 끝!</p>
-<p><strong>정확한 정의:</strong></p>
-<p>Grove는 Seeed Studio가 만든 <strong>모듈형 센서 연결 시스템</strong>입니다. 표준화된 4핀 커넥터로 누구나 쉽게 센서를 연결할 수 있어요.</p>
-<div class="mermaid">flowchart LR
-    A[🔌 Grove 센서] --&gt;|4핀 케이블| B[🛡️ Grove 쉴드]
-    B --&gt;|연결됨| C[📟 피코2]
-
-    style A fill:#e8f5e9,stroke:#4caf50
-    style B fill:#fff3e0,stroke:#ff9800
-    style C fill:#e3f2fd,stroke:#2196f3</div>
-<p><strong>왜 Grove를 사용할까요?</strong></p>
+<h2 id="_1">🎯 이 장의 학습 목표<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>이 장을 마치면 다음을 할 수 있습니다:</p>
+<ul>
+<li>[ ] Grove 시스템이 무엇인지, 왜 편리한지 설명할 수 있다</li>
+<li>[ ] Grove 쉴드의 포트 종류(디지털/아날로그/I2C)를 구분할 수 있다</li>
+<li>[ ] 버튼 센서를 연결하고 신호를 읽는 코드를 작성할 수 있다</li>
+</ul>
+<p><strong>예상 학습 시간</strong>: 약 50분</p>
+<h2 id="_2">📚 미리 알아야 할 것<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>지난 장에서 우리는 피코2에 MicroPython 펌웨어를 설치하고, Thonny에서 LED를 깜빡이는 코드를 실행해봤어요. 피코2가 코드를 받아 실행하는 흐름이 기억나시죠? 이번 장에서는 피코2에 <strong>센서</strong>를 연결하는 방법을 배웁니다!</p>
+<hr />
+<h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1-grove">개념 1: Grove 시스템 — 레고 블록 같은 센서 연결<a class="headerlink" href="#1-grove" title="Permanent link">&para;</a></h3>
+<p><strong>"Grove는 마치 레고 블록과 같아요."</strong></p>
+<p>레고는 블록 위의 돌기에 다른 블록을 '딸깍' 끼우기만 하면 되죠? 방향이나 크기를 고민할 필요가 없어요. Grove 시스템도 똑같습니다.</p>
+<p><strong>정확한 정의</strong>: Grove는 Seeed Studio에서 만든 <strong>표준화된 센서 연결 시스템</strong>입니다. 모든 센서와 보드가 동일한 4핀 커넥터를 사용해서, 케이블 하나로 '딸깍' 꽂으면 연결이 끝납니다.</p>
+<p><strong>브레드보드 배선 vs Grove 연결:</strong></p>
 <table>
 <thead>
 <tr>
-<th>기존 방식</th>
-<th>Grove 방식</th>
+<th>항목</th>
+<th>브레드보드 배선</th>
+<th>Grove 시스템</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>브레드보드 + 점퍼선 여러 개</td>
+<td>연결 방법</td>
+<td>점퍼선 여러 개</td>
 <td>케이블 1개</td>
 </tr>
 <tr>
-<td>배선 실수 위험 😰</td>
-<td>잘못 연결 불가능 😊</td>
+<td>실수 가능성</td>
+<td>높음 (잘못 꽂기 쉬움)</td>
+<td>거의 없음</td>
 </tr>
 <tr>
-<td>복잡함</td>
-<td>단순함</td>
+<td>소요 시간</td>
+<td>수 분</td>
+<td>3초</td>
+</tr>
+<tr>
+<td>필요한 지식</td>
+<td>핀 배열, 저항값 등</td>
+<td>포트에 꽂기만!</td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>💡 <strong>핵심</strong>: Grove를 쓰면 배선 실수 걱정 없이 <strong>센서 자체에 집중</strong>할 수 있어요!</p>
+</blockquote>
 <hr />
-<h2 id="_3">🔨 따라하기<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="step-1-grove">Step 1: Grove 쉴드 포트 살펴보기<a class="headerlink" href="#step-1-grove" title="Permanent link">&para;</a></h3>
-<p>Grove 쉴드에는 <strong>색상으로 구분된 포트</strong>가 있어요:</p>
+<h3 id="2-grove">개념 2: Grove 쉴드와 포트의 종류<a class="headerlink" href="#2-grove" title="Permanent link">&para;</a></h3>
+<p>피코2에 Grove 센서를 연결하려면 <strong>Grove Shield(쉴드)</strong>가 필요합니다. 쉴드는 피코2 위에 얹는 확장 보드로, 여러 개의 Grove 포트가 달려 있어요.</p>
+<div class="mermaid">flowchart TB
+    subgraph Shield["Grove 쉴드 (피코2 위에 장착)"]
+        D1["🟡 D16 - 디지털"]
+        D2["🟡 D18 - 디지털"]
+        A1["🔵 A0 - 아날로그"]
+        A2["🔵 A1 - 아날로그"]
+        I1["🔴 I2C-1"]
+        I2["🔴 I2C-2"]
+    end
+    P["Pico2 보드"] --- Shield</div>
+<p><strong>세 가지 포트를 기억하세요:</strong></p>
 <table>
 <thead>
 <tr>
-<th>포트 색상</th>
-<th>용도</th>
-<th>연결 가능한 센서</th>
+<th>포트 종류</th>
+<th>신호 타입</th>
+<th>읽을 수 있는 값</th>
+<th>예시 센서</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>🔵 <strong>파랑</strong></td>
-<td>디지털</td>
-<td>버튼, LED</td>
+<td><strong>디지털(D)</strong></td>
+<td>0 또는 1</td>
+<td>켜짐/꺼짐</td>
+<td>버튼, 모션 감지</td>
 </tr>
 <tr>
-<td>🟡 <strong>노랑</strong></td>
-<td>아날로그</td>
-<td>조도, 온도</td>
+<td><strong>아날로그(A)</strong></td>
+<td>0~65535</td>
+<td>연속적인 수치</td>
+<td>빛 센서, 온도 센서</td>
 </tr>
 <tr>
-<td>⚪ <strong>흰색</strong></td>
-<td>I2C</td>
-<td>LCD, 고급 센서</td>
+<td><strong>I2C</strong></td>
+<td>데이터 통신</td>
+<td>복합 데이터</td>
+<td>LCD 디스플레이, 컬러 센서</td>
 </tr>
 </tbody>
 </table>
+<p>쉽게 비유하면:
+- <strong>디지털</strong> = 전등 스위치 (ON/OFF 두 가지)
+- <strong>아날로그</strong> = 볼륨 다이얼 (0부터 최대까지 부드럽게)
+- <strong>I2C</strong> = USB처럼 여러 정보를 주고받는 대화 채널</p>
 <blockquote>
-<p>💡 <strong>팁</strong>: 센서 뒷면에 적힌 타입을 확인하고, 같은 색상 포트에 연결하세요!</p>
-</blockquote>
-<h3 id="step-2-2">Step 2: 쉴드를 피코2에 장착하기<a class="headerlink" href="#step-2-2" title="Permanent link">&para;</a></h3>
-<ol>
-<li>피코2의 핀과 쉴드의 구멍을 맞춰요</li>
-<li><strong>GPIO 0번</strong>이 쉴드의 표시와 일치하는지 확인</li>
-<li>살짝 눌러 끼워주세요</li>
-</ol>
-<blockquote>
-<p>✅ <strong>체크포인트</strong>: 피코2가 쉴드에 꼭 맞게 들어갔나요?</p>
+<p>💡 <strong>잠깐!</strong> 여기까지 이해되셨나요? "디지털 = 0 or 1, 아날로그 = 범위 값, I2C = 대화"만 기억하면 충분해요!</p>
 </blockquote>
 <hr />
-<h2 id="_4">⚠️ 주의할 점<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p><strong>케이블 방향 확인하기</strong></p>
-<p>Grove 케이블의 홈이 있는 면이 위로 오도록 연결하세요. 억지로 끼우면 안 돼요!</p>
-<hr />
-<h2 id="_5">✅ 점검하기<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h2 id="_4">🔨 따라하기: 버튼 센서로 신호 읽기<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>Grove 버튼 센서를 연결하고, 버튼을 누르면 값이 바뀌는 것을 확인해봅시다.</p>
+<h3 id="step-1">Step 1: 하드웨어 연결<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Grove 시스템의 가장 큰 장점은 무엇인가요?</li>
+<li><strong>피코2</strong>를 <strong>Grove 쉴드</strong> 위에 꽂습니다 (핀 방향 맞춰서)</li>
+<li><strong>Grove 버튼</strong> 모듈과 쉴드의 <strong>D16 포트</strong>를 Grove 케이블로 연결합니다</li>
+<li>피코2를 USB로 컴퓨터에 연결합니다</li>
 </ol>
+<div class="mermaid">flowchart LR
+    B["🔘 Grove 버튼"] --&gt;|Grove 케이블| S["Grove 쉴드\nD16 포트"]
+    S --&gt;|장착| P["Pico2"]
+    P --&gt;|USB| C["💻 컴퓨터"]</div>
+<blockquote>
+<p>✅ <strong>체크포인트</strong>: 케이블이 '딸깍' 소리와 함께 단단히 꽂혔는지 확인하세요!</p>
+</blockquote>
+<h3 id="step-2-thonny">Step 2: Thonny에서 코드 작성<a class="headerlink" href="#step-2-thonny" title="Permanent link">&para;</a></h3>
+<p>Thonny를 열고 아래 코드를 입력하세요.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="c1"># 버튼이 연결된 핀 설정 (D16 포트 = GP16)</span>
+<span class="n">button</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">IN</span><span class="p">)</span>
+
+<span class="c1"># 반복해서 버튼 상태 읽기</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="n">button</span><span class="o">.</span><span class="n">value</span><span class="p">()</span>   <span class="c1"># 0 또는 1 읽기</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;버튼 상태:&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>          <span class="c1"># 0.5초마다 확인</span>
+</code></pre></div>
+<h3 id="step-3">Step 3: 실행하고 결과 확인<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
+<p><strong>▶ 버튼</strong>을 눌러 실행하세요.</p>
+<p><strong>실행 결과</strong> (Shell 창):
+<div class="highlight"><pre><span></span><code>버튼 상태: 0
+버튼 상태: 0
+버튼 상태: 1    ← 버튼을 누른 순간!
+버튼 상태: 1
+버튼 상태: 0    ← 버튼에서 손을 뗀 순간
+</code></pre></div></p>
+<ul>
+<li><strong>0</strong> = 버튼을 안 누른 상태</li>
+<li><strong>1</strong> = 버튼을 누른 상태</li>
+</ul>
+<blockquote>
+<p>✅ <strong>체크포인트</strong>: 버튼을 누를 때 Shell에 <code>1</code>이 출력되면 성공이에요! 🎉</p>
+</blockquote>
+<h3 id="step-4">Step 4: 프로그램 멈추기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
+<p>Shell 창에서 <strong>Ctrl + C</strong>를 누르면 프로그램이 멈춥니다. 또는 Thonny의 <strong>🔴 Stop</strong> 버튼을 클릭하세요.</p>
+<hr />
+<h2 id="_5">📝 전체 코드<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="c1"># 버튼 센서: Grove 쉴드 D16 포트에 연결</span>
+<span class="n">button</span> <span class="o">=</span> <span class="n">Pin</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="n">Pin</span><span class="o">.</span><span class="n">IN</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="n">button</span><span class="o">.</span><span class="n">value</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;버튼 상태:&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="_6">⚠️ 주의할 점<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>쉴드 장착 방향 확인</strong>: 피코2를 쉴드에 꽂을 때 USB 포트 방향과 쉴드의 표시를 맞춰주세요. 거꾸로 꽂으면 동작하지 않거나 고장날 수 있어요!</p>
+</li>
+<li>
+<p><strong>포트 번호와 코드 일치</strong>: D16 포트에 연결했으면 코드에서도 <code>Pin(16, ...)</code>이어야 해요. D18 포트에 연결했다면 <code>Pin(18, ...)</code>로 바꿔야 합니다.</p>
+</li>
+</ol>
+<hr />
+<h2 id="_7">✅ 점검하기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p><strong>1. Grove 시스템의 가장 큰 장점은 무엇인가요?</strong></p>
 <details><summary>정답 확인</summary>
 
-복잡한 배선 없이 케이블 하나로 쉽게 연결할 수 있어요!
+표준화된 4핀 커넥터로 케이블 하나만 꽂으면 연결이 끝나서, 복잡한 배선 없이 빠르고 안전하게 센서를 연결할 수 있습니다.
 
 </details>
 
-<ol>
-<li>버튼 센서는 어떤 색상 포트에 연결하나요?</li>
-</ol>
+<p><strong>2. 버튼처럼 ON/OFF 두 가지 상태만 있는 센서는 어떤 포트에 연결하나요?</strong></p>
 <details><summary>정답 확인</summary>
 
-🔵 파란색 (디지털) 포트에 연결합니다.
+**디지털(D) 포트**에 연결합니다. 디지털 포트는 0과 1, 두 가지 값을 읽을 수 있어요.
+
+</details>
+
+<p><strong>3. 빛의 밝기처럼 연속적인 값을 읽으려면 어떤 포트를 사용해야 할까요?</strong></p>
+<details><summary>정답 확인</summary>
+
+**아날로그(A) 포트**를 사용합니다. 아날로그 포트는 0~65535 범위의 연속적인 수치를 읽을 수 있어요.
 
 </details>
 
 <hr />
-<h2 id="_6">🔗 다음 장 미리보기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<p>다음 장에서는 Grove 버튼을 연결하고 <strong>실제로 신호를 읽어보는 코드</strong>를 작성해요! 🎮</p>
+<h2 id="_8">🔗 다음 장 미리보기<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>축하해요! 🎉 이제 Grove 시스템으로 센서를 연결하는 방법을 배웠어요.</p>
+<p>다음 장에서는 <strong>디지털 출력으로 LED 제어하기</strong>를 배웁니다. 버튼(입력)을 읽는 것에서 한 걸음 나아가, 피코2가 직접 LED를 켜고 끄는 <strong>출력</strong>을 다뤄볼 거예요. 내 코드로 빛을 마음대로 제어하는 경험, 기대되시죠? ✨</p>
 
 
 

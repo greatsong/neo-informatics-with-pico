@@ -9,7 +9,7 @@
         <meta name="description" content="라즈베리파이 피코2와 Grove 센서를 활용하여 프로그래밍 기초부터 AI 협업까지, 실생활 문제해결 역량을 키우는 고등학생 맞춤 코딩 입문서입니다.">
       
       
-        <meta name="author" content="Created with Data-AI-Book Generator">
+        <meta name="author" content="Created with EduFlow">
       
       
       
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-10" class="md-skip">
+        <a href="#10" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -790,7 +790,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        🎯 이 장의 학습 목표
       
     </span>
   </a>
@@ -799,6 +799,17 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 미리 알아야 할 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -810,10 +821,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#adc-analog-to-digital-conversion" class="md-nav__link">
+  <a href="#1-adc" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: ADC (Analog-to-Digital Conversion)
+        개념 1: 아날로그 신호와 ADC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: 조도 센서(CdS 포토레지스터)
       
     </span>
   </a>
@@ -826,7 +848,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔨 따라하기
@@ -852,7 +874,29 @@
   <a href="#step-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 밝기 값 읽기
+        Step 2: 아날로그 값 읽기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 밝기 상태 판별하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 직접 실험해보기
       
     </span>
   </a>
@@ -865,7 +909,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
         📝 전체 코드
@@ -876,7 +920,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         ⚠️ 주의할 점
@@ -887,7 +931,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         ✅ 점검하기
@@ -898,7 +942,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 이 장의 핵심 정리
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔗 다음 장 미리보기
@@ -2111,7 +2166,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        🎯 이 장의 학습 목표
       
     </span>
   </a>
@@ -2120,6 +2175,17 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 미리 알아야 할 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -2131,10 +2197,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#adc-analog-to-digital-conversion" class="md-nav__link">
+  <a href="#1-adc" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: ADC (Analog-to-Digital Conversion)
+        개념 1: 아날로그 신호와 ADC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: 조도 센서(CdS 포토레지스터)
       
     </span>
   </a>
@@ -2147,7 +2224,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔨 따라하기
@@ -2173,7 +2250,29 @@
   <a href="#step-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 밝기 값 읽기
+        Step 2: 아날로그 값 읽기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 밝기 상태 판별하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 직접 실험해보기
       
     </span>
   </a>
@@ -2186,7 +2285,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
         📝 전체 코드
@@ -2197,7 +2296,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         ⚠️ 주의할 점
@@ -2208,7 +2307,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         ✅ 점검하기
@@ -2219,7 +2318,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 이 장의 핵심 정리
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔗 다음 장 미리보기
@@ -2246,127 +2356,288 @@
 
 
 
-<h1 id="chapter-10">Chapter 10: 조도 센서로 빛의 밝기 측정하기<a class="headerlink" href="#chapter-10" title="Permanent link">&para;</a></h1>
-<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h1 id="10">챕터 10: 조도 센서로 빛의 밝기 측정하기 💡<a class="headerlink" href="#10" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="_1">🎯 이 장의 학습 목표<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>이 장을 마치면 다음을 할 수 있습니다:</p>
 <ul>
-<li>[ ] 조도 센서의 아날로그 값을 읽을 수 있다</li>
-<li>[ ] ADC(아날로그-디지털 변환) 개념을 이해한다</li>
-<li>[ ] 밝기 변화를 숫자로 확인할 수 있다</li>
+<li>[ ] 조도 센서의 아날로그 값을 읽고 밝기 변화를 확인할 수 있다</li>
+<li>[ ] ADC(아날로그-디지털 변환) 개념을 이해하고 설명할 수 있다</li>
+<li>[ ] 측정값을 활용해 밝기 상태를 판별하는 프로그램을 만들 수 있다</li>
 </ul>
-<blockquote>
-<p>⏱️ <strong>예상 학습 시간</strong>: 약 45분</p>
-</blockquote>
+<p><strong>예상 학습 시간</strong>: 약 50분</p>
+<h2 id="_2">📚 미리 알아야 할 것<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>이전 장에서 배운 내용을 간단히 떠올려 볼까요?</p>
+<ul>
+<li><strong>디지털 입력</strong>: HIGH(1) 또는 LOW(0), 두 가지 상태만 읽었어요</li>
+<li><strong><code>print()</code> 로 시리얼 모니터에 값 출력</strong>하는 방법</li>
+<li>아두이노에 센서를 연결하고 코드를 업로드하는 기본 과정</li>
+</ul>
+<p>이번에는 <strong>0과 1이 아닌, 중간 값까지 읽는 방법</strong>을 배웁니다!</p>
 <hr />
-<h2 id="_2">📚 핵심 개념<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="adc-analog-to-digital-conversion">개념: ADC (Analog-to-Digital Conversion)<a class="headerlink" href="#adc-analog-to-digital-conversion" title="Permanent link">&para;</a></h3>
-<p><strong>비유로 시작할게요</strong> 🎵</p>
-<blockquote>
-<p>ADC는 마치 <strong>아날로그 음악을 MP3로 변환</strong>하는 것과 같아요!</p>
-</blockquote>
+<h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1-adc">개념 1: 아날로그 신호와 ADC<a class="headerlink" href="#1-adc" title="Permanent link">&para;</a></h3>
+<p><strong>비유로 시작할게요.</strong> 🎵</p>
+<p>여러분이 노래를 부르면 목소리는 <strong>부드럽게 연결된 파도</strong>처럼 흘러갑니다. 이것이 <strong>아날로그 신호</strong>예요 — 끊김 없이 연속적으로 변하는 값이죠.</p>
+<p>그런데 이 노래를 스마트폰에 저장하려면? 컴퓨터는 연속적인 파도를 이해하지 못해요. 그래서 <strong>일정 간격으로 높이를 측정해서 숫자로 기록</strong>합니다. 이 과정이 바로 <strong>ADC(Analog-to-Digital Conversion)</strong>, 아날로그-디지털 변환이에요.</p>
 <div class="mermaid">flowchart LR
-    A["🎸 연속적인 소리&lt;br/&gt;(아날로그)"] --&gt; B["🔄 ADC&lt;br/&gt;변환기"] --&gt; C["💾 숫자 데이터&lt;br/&gt;(디지털)"]
-
-    style A fill:#fff3e0,stroke:#ff9800
-    style B fill:#e3f2fd,stroke:#2196f3
-    style C fill:#e8f5e9,stroke:#4caf50</div>
-<p><strong>정확한 정의</strong>:
-- 빛의 밝기는 <strong>연속적인 값</strong> (아날로그)
-- ESP32는 이를 <strong>0~4095 숫자</strong>로 변환 (디지털)
-- 12비트 해상도: 2¹² = 4,096단계</p>
-<p><strong>예시로 확인</strong>:
-| 상황 | 아날로그 값 | 의미 |
-|------|------------|------|
-| 어두움 | 0~500 | 센서에 빛이 거의 없음 |
-| 실내 | 1000~2500 | 일반적인 조명 |
-| 밝음 | 3000~4095 | 강한 빛 |</p>
-<hr />
-<h2 id="_3">🔨 따라하기<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="step-1">Step 1: 회로 연결하기<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
-<p>조도 센서(포토레지스터)를 연결해요.</p>
-<div class="highlight"><pre><span></span><code>조도 센서 → ESP32
-━━━━━━━━━━━━━━━━
-VCC      → 3.3V
-GND      → GND
-OUT      → GPIO 34 (ADC1)
-</code></pre></div>
+    A["🌊 아날로그 신호&lt;br/&gt;(연속적인 빛의 밝기)"] --&gt; B["⚙️ ADC 변환&lt;br/&gt;(숫자로 바꾸기)"] --&gt; C["🔢 디지털 값&lt;br/&gt;(0 ~ 1023)"]
+    style A fill:#fff3e0,stroke:#f57c00
+    style B fill:#e3f2fd,stroke:#1976d2
+    style C fill:#e8f5e9,stroke:#388e3c</div>
+<p><strong>정확한 정의</strong>: ADC란 연속적으로 변하는 아날로그 신호를 컴퓨터가 처리할 수 있는 <strong>정수 값</strong>으로 바꾸는 과정입니다.</p>
+<p><strong>아두이노의 ADC 핵심 수치:</strong>
+| 항목 | 값 |
+|------|-----|
+| 입력 전압 범위 | 0V ~ 5V |
+| 해상도 | 10비트 |
+| 출력 값 범위 | <strong>0 ~ 1023</strong> |</p>
 <blockquote>
-<p>💡 <strong>GPIO 34, 35, 36, 39</strong>는 입력 전용 핀이에요. ADC 읽기에 적합해요!</p>
+<p>0V → 0, 5V → 1023, 2.5V → 약 512</p>
+</blockquote>
+<h3 id="2-cds">개념 2: 조도 센서(CdS 포토레지스터)<a class="headerlink" href="#2-cds" title="Permanent link">&para;</a></h3>
+<p><strong>비유로 시작할게요.</strong> 👁️</p>
+<p>조도 센서는 <strong>빛에 반응하는 저항</strong>이에요. 마치 우리 눈의 동공처럼, 밝으면 저항이 줄어들고 어두우면 저항이 커집니다.</p>
+<p><strong>정확한 정의</strong>: CdS(황화카드뮴) 포토레지스터는 빛의 양에 따라 <strong>저항값이 변하는</strong> 소자입니다.</p>
+<table>
+<thead>
+<tr>
+<th>환경</th>
+<th>저항</th>
+<th>아날로그 읽기 값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>밝은 곳 ☀️</td>
+<td>낮음</td>
+<td><strong>높은 값</strong> (700~1023)</td>
+</tr>
+<tr>
+<td>보통 🏠</td>
+<td>중간</td>
+<td><strong>중간 값</strong> (300~700)</td>
+</tr>
+<tr>
+<td>어두운 곳 🌙</td>
+<td>높음</td>
+<td><strong>낮은 값</strong> (0~300)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ 회로 구성 방식에 따라 밝을 때 값이 높을 수도, 낮을 수도 있어요. 이 교재에서는 <strong>밝을수록 값이 큰</strong> 회로를 사용합니다.</p>
 </blockquote>
 <hr />
-<h3 id="step-2">Step 2: 밝기 값 읽기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
-<p><strong>코드</strong>:
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">ADC</span><span class="p">,</span> <span class="n">Pin</span>
-<span class="kn">import</span> <span class="nn">time</span>
+<blockquote>
+<p>💡 <strong>잠깐!</strong> 여기까지 이해가 잘 되셨나요?
+정리하면: <strong>빛 → 센서 저항 변화 → 전압 변화 → ADC가 숫자로 변환 → 우리가 읽기!</strong>
+이 흐름만 기억하면 됩니다 😊</p>
+</blockquote>
+<hr />
+<h2 id="_4">🔨 따라하기<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="step-1">Step 1: 회로 연결하기<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
+<p><strong>준비물</strong>: 아두이노 UNO, CdS 조도 센서, 10kΩ 저항, 브레드보드, 점퍼선</p>
+<p><strong>연결 방법:</strong></p>
+<table>
+<thead>
+<tr>
+<th>부품</th>
+<th>연결 위치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CdS 센서 한쪽 다리</td>
+<td><strong>5V</strong></td>
+</tr>
+<tr>
+<td>CdS 센서 다른 다리</td>
+<td><strong>A0</strong> 핀 + 10kΩ 저항</td>
+</tr>
+<tr>
+<td>10kΩ 저항 다른 쪽</td>
+<td><strong>GND</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="mermaid">flowchart LR
+    V["5V ⚡"] --&gt; CDS["CdS 센서"]
+    CDS --&gt; NODE["연결점 → A0"]
+    NODE --&gt; R["10kΩ 저항"]
+    R --&gt; GND["GND ⏚"]
+    style V fill:#ffcdd2,stroke:#c62828
+    style GND fill:#bbdefb,stroke:#1565c0
+    style NODE fill:#fff9c4,stroke:#f9a825</div>
+<blockquote>
+<p>이 회로를 <strong>전압 분배 회로</strong>라고 해요. 센서와 저항이 전압을 나눠 갖고, 그 중간 지점의 전압을 A0에서 읽는 원리입니다.</p>
+</blockquote>
+<h3 id="step-2">Step 2: 아날로그 값 읽기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
+<p><strong>코드:</strong>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">sensorPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A0</span><span class="p">;</span><span class="w">  </span><span class="c1">// 조도 센서 연결 핀</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// 읽은 값 저장용</span>
 
-<span class="c1"># 조도 센서 설정 (GPIO 34)</span>
-<span class="n">light_sensor</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">34</span><span class="p">))</span>
-<span class="n">light_sensor</span><span class="o">.</span><span class="n">atten</span><span class="p">(</span><span class="n">ADC</span><span class="o">.</span><span class="n">ATTN_11DB</span><span class="p">)</span>  <span class="c1"># 0~3.3V 범위</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w">  </span><span class="c1">// 시리얼 통신 시작</span>
+<span class="p">}</span>
 
-<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">value</span> <span class="o">=</span> <span class="n">light_sensor</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>  <span class="c1"># 0~4095</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;밝기: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">analogRead</span><span class="p">(</span><span class="n">sensorPin</span><span class="p">);</span><span class="w">  </span><span class="c1">// 아날로그 값 읽기 (0~1023)</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;조도 값: &quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">sensorValue</span><span class="p">);</span>
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span><span class="w">  </span><span class="c1">// 0.5초 간격으로 측정</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p><strong>실행 결과</strong> (시리얼 모니터):
+<div class="highlight"><pre><span></span><code>조도 값: 742
+조도 값: 738
+조도 값: 215
+조도 값: 48
+</code></pre></div></p>
+<blockquote>
+<p>✅ <strong>체크포인트</strong>: 시리얼 모니터에 숫자가 출력되면 성공! 손으로 센서를 가려보세요 — 값이 줄어들면 정상입니다.</p>
+</blockquote>
+<h3 id="step-3">Step 3: 밝기 상태 판별하기<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
+<p>측정값을 사람이 이해하기 쉬운 <strong>상태 메시지</strong>로 바꿔봅시다.</p>
+<p><strong>코드:</strong>
+<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">sensorPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A0</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">analogRead</span><span class="p">(</span><span class="n">sensorPin</span><span class="p">);</span>
+
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;조도 값: &quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">sensorValue</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; → &quot;</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// 밝기 상태 판별</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sensorValue</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">700</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;☀️ 아주 밝음&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sensorValue</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">400</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;🏠 보통 밝기&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sensorValue</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">150</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;🌅 어두움&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;🌙 매우 어두움&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div></p>
 <p><strong>실행 결과</strong>:
-<div class="highlight"><pre><span></span><code>밝기: 2847
-밝기: 2851
-밝기: 1203  ← 손으로 가렸을 때
-밝기: 3891  ← 조명 비췄을 때
+<div class="highlight"><pre><span></span><code>조도 값: 782 → ☀️ 아주 밝음
+조도 값: 523 → 🏠 보통 밝기
+조도 값: 87 → 🌙 매우 어두움
 </code></pre></div></p>
+<h3 id="step-4">Step 4: 직접 실험해보기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
+<p>코드를 업로드한 후, 다음을 시도해보세요:</p>
+<ol>
+<li><strong>손으로 센서를 완전히 감싸기</strong> → 값이 얼마까지 떨어지나요?</li>
+<li><strong>스마트폰 손전등을 센서에 비추기</strong> → 값이 얼마까지 올라가나요?</li>
+<li><strong>서서히 손을 가까이/멀리 하기</strong> → 값이 부드럽게 변하나요?</li>
+</ol>
 <blockquote>
-<p>✅ <strong>체크포인트</strong>: 손으로 센서를 가리면 값이 낮아지나요?</p>
+<p>💡 이것이 바로 아날로그의 장점이에요! 디지털은 ON/OFF 뿐이었지만, <strong>아날로그는 중간 값을 모두 표현</strong>할 수 있습니다.</p>
 </blockquote>
 <hr />
-<h2 id="_4">📝 전체 코드<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">ADC</span><span class="p">,</span> <span class="n">Pin</span>
-<span class="kn">import</span> <span class="nn">time</span>
+<h2 id="_5">📝 전체 코드<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="c1">// 챕터 10: 조도 센서로 밝기 측정하기</span>
+<span class="c1">// 조도 센서(CdS)의 아날로그 값을 읽어 밝기 상태를 출력합니다</span>
 
-<span class="c1"># 조도 센서 초기화</span>
-<span class="n">light_sensor</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">34</span><span class="p">))</span>
-<span class="n">light_sensor</span><span class="o">.</span><span class="n">atten</span><span class="p">(</span><span class="n">ADC</span><span class="o">.</span><span class="n">ATTN_11DB</span><span class="p">)</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">sensorPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">A0</span><span class="p">;</span><span class="w">   </span><span class="c1">// 조도 센서 핀</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">  </span><span class="c1">// 센서 측정값</span>
 
-<span class="k">def</span> <span class="nf">get_brightness_level</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;밝기 수준 판단&quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;어두움 🌙&quot;</span>
-    <span class="k">elif</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="mi">2500</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;보통 💡&quot;</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;밝음 ☀️&quot;</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;=== 조도 센서 측정 시작 ===&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 
-<span class="c1"># 측정 시작</span>
-<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">value</span> <span class="o">=</span> <span class="n">light_sensor</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-    <span class="n">level</span> <span class="o">=</span> <span class="n">get_brightness_level</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;측정값: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2"> → </span><span class="si">{</span><span class="n">level</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// 1. 아날로그 값 읽기</span>
+<span class="w">  </span><span class="n">sensorValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">analogRead</span><span class="p">(</span><span class="n">sensorPin</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// 2. 값 출력</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;조도 값: &quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">sensorValue</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot; → &quot;</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// 3. 상태 판별</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sensorValue</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">700</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;아주 밝음&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sensorValue</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">400</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;보통 밝기&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">sensorValue</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">150</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;어두움&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot;매우 어두움&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<span class="p">}</span>
 </code></pre></div>
 <hr />
-<h2 id="_5">⚠️ 주의할 점<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>ADC 핀 선택</strong>: GPIO 34, 35, 36, 39만 ADC 입력 가능</li>
-<li><strong>감쇠 설정</strong>: <code>ATTN_11DB</code>를 설정해야 0~3.3V 전체 범위 측정</li>
-</ol>
+<h2 id="_6">⚠️ 주의할 점<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p><strong>1. <code>analogRead()</code>와 <code>digitalRead()</code>를 혼동하지 마세요!</strong></p>
+<table>
+<thead>
+<tr>
+<th>함수</th>
+<th>핀</th>
+<th>반환 값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>digitalRead(핀)</code></td>
+<td>D0~D13</td>
+<td>0 또는 1</td>
+</tr>
+<tr>
+<td><code>analogRead(핀)</code></td>
+<td><strong>A0~A5</strong></td>
+<td><strong>0 ~ 1023</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>2. 임계값(700, 400, 150)은 환경에 따라 조정이 필요해요</strong></p>
+<p>교재의 숫자는 예시일 뿐이에요. 여러분의 센서와 조명 환경에 맞게 시리얼 모니터 값을 관찰하면서 적절히 바꿔주세요.</p>
 <hr />
-<h2 id="_6">✅ 점검하기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<ol>
-<li>ADC가 하는 역할은 무엇인가요?</li>
-</ol>
-<details><summary>정답 확인</summary>연속적인 아날로그 신호를 디지털 숫자(0~4095)로 변환합니다.</details>
+<h2 id="_7">✅ 점검하기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p><strong>1. <code>analogRead(A0)</code>의 반환 값 범위는?</strong></p>
+<details><summary>정답 확인</summary>
 
-<ol>
-<li>ESP32의 ADC 해상도는 몇 비트인가요?</li>
-</ol>
-<details><summary>정답 확인</summary>12비트 (0~4095, 총 4096단계)</details>
+**0 ~ 1023**입니다. 아두이노 UNO의 ADC는 10비트 해상도로, 0V일 때 0, 5V일 때 1023을 반환합니다.
 
-<ol>
-<li>센서를 손으로 가리면 값이 어떻게 변하나요?</li>
-</ol>
-<details><summary>정답 확인</summary>빛이 차단되어 값이 낮아집니다.</details>
+</details>
+
+<p><strong>2. ADC란 무엇인지 한 문장으로 설명해보세요.</strong></p>
+<details><summary>정답 확인</summary>
+
+ADC(Analog-to-Digital Conversion)는 **연속적으로 변하는 아날로그 신호를 컴퓨터가 처리할 수 있는 정수 값으로 변환하는 과정**입니다.
+
+</details>
+
+<p><strong>3. 조도 센서를 손으로 완전히 가렸을 때, 아날로그 값은 어떻게 변할까요?</strong></p>
+<details><summary>정답 확인</summary>
+
+빛이 차단되면 센서 저항이 커지고, 아날로그 읽기 값은 **작아집니다** (0에 가까워짐). 우리 회로에서는 어두울수록 낮은 값이 나옵니다.
+
+</details>
 
 <hr />
-<h2 id="_7">🔗 다음 장 미리보기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<p>다음 장에서는 <strong>수온 센서(DS18B20)</strong>로 물의 온도를 측정해볼 거예요. 디지털 통신 방식인 1-Wire 프로토콜을 배워봅니다! 🌡️</p>
+<h2 id="_8">📌 이 장의 핵심 정리<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<ul>
+<li>✅ <strong>ADC</strong>는 연속적인 아날로그 신호를 0~1023 사이 숫자로 변환하는 과정이다</li>
+<li>✅ <strong><code>analogRead(핀)</code></strong> 함수로 아날로그 값을 읽고, <strong><code>if-else</code></strong> 로 상태를 판별할 수 있다</li>
+<li>✅ 조도 센서는 빛에 따라 저항이 변하는 소자로, 밝기를 숫자로 측정할 수 있게 해준다</li>
+</ul>
+<hr />
+<h2 id="_9">🔗 다음 장 미리보기<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>다음 장에서는 <strong>초음파 센서로 거리를 측정</strong>하는 방법을 배웁니다. 빛 대신 <strong>소리(초음파)</strong>를 쏘고 돌아오는 시간을 계산해서 물체까지의 거리를 알아내는 원리예요. 마치 박쥐가 어둠 속에서 장애물을 피하는 것처럼요! 🦇</p>
 
 
 

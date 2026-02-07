@@ -9,7 +9,7 @@
         <meta name="description" content="라즈베리파이 피코2와 Grove 센서를 활용하여 프로그래밍 기초부터 AI 협업까지, 실생활 문제해결 역량을 키우는 고등학생 맞춤 코딩 입문서입니다.">
       
       
-        <meta name="author" content="Created with Data-AI-Book Generator">
+        <meta name="author" content="Created with EduFlow">
       
       
       
@@ -1157,7 +1157,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        🎯 이 장의 학습 목표
       
     </span>
   </a>
@@ -1166,6 +1166,17 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 미리 알아야 할 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -1177,38 +1188,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#rgb-led" class="md-nav__link">
+  <a href="#1-rgb-led" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: RGB LED
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔨 따라하기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-rgb-led" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: RGB LED 색상 함수 만들기
+        개념 1: RGB LED — 빛의 삼원색으로 모든 색 만들기
       
     </span>
   </a>
@@ -1216,10 +1199,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 온도별 색상 표시
+        개념 2: 조건문으로 온도 구간 나누기
       
     </span>
   </a>
@@ -1235,10 +1218,60 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📝 전체 코드
+        🔨 따라하기
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-rgb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: RGB 색상을 표현하는 함수 만들기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 온도에 따라 색상 결정하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 온도 입력받아 LED 표시하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 여러 온도를 연속으로 테스트하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1246,7 +1279,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 주의할 점
+        📝 전체 코드
       
     </span>
   </a>
@@ -1257,7 +1290,7 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 점검하기
+        ⚠️ 주의할 점
       
     </span>
   </a>
@@ -1266,6 +1299,56 @@
       
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ 점검하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-rgb-0-255-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. RGB 값 (0, 255, 0)은 무슨 색일까요?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 온도가 정확히 18도일 때, 어떤 색이 표시될까요?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. "매우 추움(10도 이하)은 보라색"을 추가하려면 어디에 조건을 넣어야 할까요?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔗 다음 장 미리보기
@@ -2111,7 +2194,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        🎯 이 장의 학습 목표
       
     </span>
   </a>
@@ -2120,6 +2203,17 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 미리 알아야 할 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -2131,38 +2225,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#rgb-led" class="md-nav__link">
+  <a href="#1-rgb-led" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: RGB LED
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔨 따라하기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-rgb-led" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: RGB LED 색상 함수 만들기
+        개념 1: RGB LED — 빛의 삼원색으로 모든 색 만들기
       
     </span>
   </a>
@@ -2170,10 +2236,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 온도별 색상 표시
+        개념 2: 조건문으로 온도 구간 나누기
       
     </span>
   </a>
@@ -2189,10 +2255,60 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📝 전체 코드
+        🔨 따라하기
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-rgb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: RGB 색상을 표현하는 함수 만들기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 온도에 따라 색상 결정하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 온도 입력받아 LED 표시하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 여러 온도를 연속으로 테스트하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2200,7 +2316,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 주의할 점
+        📝 전체 코드
       
     </span>
   </a>
@@ -2211,7 +2327,7 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 점검하기
+        ⚠️ 주의할 점
       
     </span>
   </a>
@@ -2220,6 +2336,56 @@
       
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✅ 점검하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-rgb-0-255-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. RGB 값 (0, 255, 0)은 무슨 색일까요?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 온도가 정확히 18도일 때, 어떤 색이 표시될까요?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. "매우 추움(10도 이하)은 보라색"을 추가하려면 어디에 조건을 넣어야 할까요?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔗 다음 장 미리보기
@@ -2246,29 +2412,45 @@
 
 
 
-<h1 id="chapter-21-led">Chapter 21: 온도에 따른 LED 색상 표시기 만들기<a class="headerlink" href="#chapter-21-led" title="Permanent link">&para;</a></h1>
-<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h1 id="chapter-21-led">📘 Chapter 21: 온도에 따른 LED 색상 표시기 만들기<a class="headerlink" href="#chapter-21-led" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="_1">🎯 이 장의 학습 목표<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>이 장을 마치면 다음을 할 수 있습니다:</p>
 <ul>
-<li>[ ] RGB LED로 다양한 색상을 표현할 수 있다</li>
-<li>[ ] 온도 범위에 따라 LED 색상을 변경할 수 있다</li>
+<li>[ ] RGB LED의 원리를 이해하고 코드로 색상을 제어할 수 있다</li>
+<li>[ ] 온도 범위에 따라 다른 색상을 표시하는 프로그램을 작성할 수 있다</li>
+</ul>
+<p><strong>예상 학습 시간</strong>: 약 40분</p>
+<hr />
+<h2 id="_2">📚 미리 알아야 할 것<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>이전 장에서 배운 내용을 간단히 떠올려 볼까요?</p>
+<ul>
+<li><strong>조건문(if/elif/else)</strong>: 조건에 따라 다른 코드를 실행하는 방법</li>
+<li><strong>비교 연산자</strong>: <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code> 등으로 값을 비교하는 방법</li>
+<li><strong>변수</strong>: 데이터를 저장하는 이름표 붙은 상자</li>
 </ul>
 <blockquote>
-<p>⏱️ <strong>예상 학습 시간</strong>: 약 40분</p>
+<p>이 개념들이 기억나지 않아도 괜찮아요. 실습하면서 자연스럽게 복습하게 됩니다! 😊</p>
 </blockquote>
 <hr />
-<h2 id="_2">📚 핵심 개념<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="rgb-led">개념: RGB LED<a class="headerlink" href="#rgb-led" title="Permanent link">&para;</a></h3>
-<p><strong>비유</strong>: RGB LED는 <strong>세 가지 물감이 들어있는 팔레트</strong>와 같아요!</p>
-<p>빨강(R), 초록(G), 파랑(B) 세 가지 빛을 섞어서 다양한 색을 만들어요.</p>
+<h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1-rgb-led">개념 1: RGB LED — 빛의 삼원색으로 모든 색 만들기<a class="headerlink" href="#1-rgb-led" title="Permanent link">&para;</a></h3>
+<p>RGB LED는 마치 <strong>물감 팔레트</strong>와 같아요. 빨강(Red), 초록(Green), 파랑(Blue) 세 가지 빛을 섞어서 거의 모든 색을 만들어낼 수 있습니다.</p>
 <div class="mermaid">flowchart LR
-    R["🔴 빨강"] --&gt; MIX["🎨 RGB LED"]
-    G["🟢 초록"] --&gt; MIX
-    B["🔵 파랑"] --&gt; MIX
-    MIX --&gt; COLOR["다양한 색상!"]</div>
+    R["🔴 빨강\n(Red)"] --&gt; MIX["🎨 색상 혼합"]
+    G["🟢 초록\n(Green)"] --&gt; MIX
+    B["🔵 파랑\n(Blue)"] --&gt; MIX
+    MIX --&gt; RESULT["💡 원하는 색상!"]
+    style R fill:#ffcdd2,stroke:#e53935
+    style G fill:#c8e6c9,stroke:#43a047
+    style B fill:#bbdefb,stroke:#1e88e5
+    style MIX fill:#fff9c4,stroke:#f9a825
+    style RESULT fill:#f3e5f5,stroke:#8e24aa</div>
+<p>각 색상의 밝기를 <strong>0~255 숫자</strong>로 조절합니다:</p>
 <table>
 <thead>
 <tr>
-<th>조합</th>
+<th>색상 조합</th>
 <th>R</th>
 <th>G</th>
 <th>B</th>
@@ -2277,142 +2459,274 @@
 </thead>
 <tbody>
 <tr>
-<td>빨강</td>
+<td>빨강만</td>
 <td>255</td>
 <td>0</td>
 <td>0</td>
-<td>🔴</td>
+<td>🔴 빨간색</td>
 </tr>
 <tr>
-<td>초록</td>
+<td>초록만</td>
 <td>0</td>
 <td>255</td>
 <td>0</td>
-<td>🟢</td>
+<td>🟢 초록색</td>
 </tr>
 <tr>
-<td>파랑</td>
+<td>파랑만</td>
 <td>0</td>
 <td>0</td>
 <td>255</td>
-<td>🔵</td>
+<td>🔵 파란색</td>
+</tr>
+<tr>
+<td>빨강+초록</td>
+<td>255</td>
+<td>255</td>
+<td>0</td>
+<td>🟡 노란색</td>
+</tr>
+<tr>
+<td>모두 끔</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>⚫ 꺼짐</td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>💡 <strong>기억하세요</strong>: 0은 완전히 꺼진 상태, 255는 최대 밝기예요!</p>
+</blockquote>
+<h3 id="2">개념 2: 조건문으로 온도 구간 나누기<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>온도계를 볼 때, 우리는 자연스럽게 <strong>구간</strong>으로 나눠서 판단하죠:</p>
+<ul>
+<li>"18도 이하면 춥다" → 🔵 파란색</li>
+<li>"18~28도면 쾌적하다" → 🟢 초록색</li>
+<li>"28도 이상이면 덥다" → 🔴 빨간색</li>
+</ul>
+<p>이것을 코드로 옮기면 <code>if/elif/else</code> 구조가 됩니다:</p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">temperature</span> <span class="o">&lt;=</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="c1"># 춥다 → 파란색</span>
+<span class="k">elif</span> <span class="n">temperature</span> <span class="o">&lt;=</span> <span class="mi">28</span><span class="p">:</span>
+    <span class="c1"># 쾌적 → 초록색</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># 덥다 → 빨간색</span>
+</code></pre></div>
+<div class="mermaid">flowchart TD
+    START["🌡️ 온도 측정"] --&gt; CHECK1{"온도 ≤ 18?"}
+    CHECK1 --&gt;|예| BLUE["🔵 파란색 표시\n추워요!"]
+    CHECK1 --&gt;|아니오| CHECK2{"온도 ≤ 28?"}
+    CHECK2 --&gt;|예| GREEN["🟢 초록색 표시\n쾌적해요!"]
+    CHECK2 --&gt;|아니오| RED["🔴 빨간색 표시\n더워요!"]
+    style BLUE fill:#bbdefb,stroke:#1e88e5
+    style GREEN fill:#c8e6c9,stroke:#43a047
+    style RED fill:#ffcdd2,stroke:#e53935
+    style START fill:#fff9c4,stroke:#f9a825</div>
+<blockquote>
+<p>💡 <strong>잠깐!</strong> 여기까지 이해가 잘 되셨나요?
+RGB의 숫자 조합으로 색을 만들고, 조건문으로 온도 구간을 나눈다 — 이 두 가지만 알면 준비 끝이에요!</p>
+</blockquote>
 <hr />
-<h2 id="_3">🔨 따라하기<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="step-1-rgb-led">Step 1: RGB LED 색상 함수 만들기<a class="headerlink" href="#step-1-rgb-led" title="Permanent link">&para;</a></h3>
+<h2 id="_4">🔨 따라하기<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>이제 직접 코드를 작성해 봅시다! 실제 하드웨어가 없어도, <strong>시뮬레이션 방식</strong>으로 동작 원리를 완벽히 익힐 수 있어요.</p>
+<h3 id="step-1-rgb">Step 1: RGB 색상을 표현하는 함수 만들기<a class="headerlink" href="#step-1-rgb" title="Permanent link">&para;</a></h3>
+<p>먼저 RGB LED에 색상을 보내는 함수를 만들어 볼게요.</p>
 <p><strong>코드</strong>:
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">machine</span>
-<span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">PWM</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">set_led_color</span><span class="p">(</span><span class="n">red</span><span class="p">,</span> <span class="n">green</span><span class="p">,</span> <span class="n">blue</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;RGB LED의 색상을 설정하는 함수&quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;LED 색상 → R:</span><span class="si">{</span><span class="n">red</span><span class="si">}</span><span class="s2">, G:</span><span class="si">{</span><span class="n">green</span><span class="si">}</span><span class="s2">, B:</span><span class="si">{</span><span class="n">blue</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="c1"># RGB LED 핀 설정</span>
-<span class="n">red</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">13</span><span class="p">))</span>
-<span class="n">green</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">12</span><span class="p">))</span>
-<span class="n">blue</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">14</span><span class="p">))</span>
-
-<span class="k">def</span> <span class="nf">set_color</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;RGB 색상 설정&quot;&quot;&quot;</span>
-    <span class="n">red</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="n">r</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>    <span class="c1"># 0~255 → 0~1023 변환</span>
-    <span class="n">green</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="n">g</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>
-    <span class="n">blue</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>
-
-<span class="c1"># 테스트: 파란색</span>
-<span class="n">set_color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
-</code></pre></div></p>
-<p><strong>실행 결과</strong>:
-<div class="highlight"><pre><span></span><code>LED가 파란색으로 켜짐
-</code></pre></div></p>
-<hr />
-<h3 id="step-2">Step 2: 온도별 색상 표시<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
-<p><strong>코드</strong>:
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">show_temp_color</span><span class="p">(</span><span class="n">temp</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;온도에 따른 색상 표시&quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">temp</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
-        <span class="n">set_color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>    <span class="c1"># 추움: 파랑</span>
-    <span class="k">elif</span> <span class="n">temp</span> <span class="o">&lt;</span> <span class="mi">26</span><span class="p">:</span>
-        <span class="n">set_color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>    <span class="c1"># 적당: 초록</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">set_color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>    <span class="c1"># 더움: 빨강</span>
+    <span class="c1"># 어떤 색인지 알기 쉽게 표시</span>
+    <span class="k">if</span> <span class="n">red</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">green</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">blue</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🔴 빨간색 빛이 켜졌습니다!&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">red</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">green</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">blue</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🟢 초록색 빛이 켜졌습니다!&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">red</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">green</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">blue</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🔵 파란색 빛이 켜졌습니다!&quot;</span><span class="p">)</span>
 
 <span class="c1"># 테스트</span>
-<span class="n">show_temp_color</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>  <span class="c1"># 파랑</span>
-<span class="n">show_temp_color</span><span class="p">(</span><span class="mi">22</span><span class="p">)</span>  <span class="c1"># 초록</span>
-<span class="n">show_temp_color</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>  <span class="c1"># 빨강</span>
+<span class="n">set_led_color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 </code></pre></div></p>
-<div class="mermaid">flowchart LR
-    T["🌡️ 온도"] --&gt; C1{18℃ 미만?}
-    C1 --&gt;|예| B["🔵 파랑&lt;br/&gt;추워요"]
-    C1 --&gt;|아니오| C2{26℃ 미만?}
-    C2 --&gt;|예| G["🟢 초록&lt;br/&gt;쾌적해요"]
-    C2 --&gt;|아니오| R["🔴 빨강&lt;br/&gt;더워요"]</div>
-<hr />
-<h2 id="_4">📝 전체 코드<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">PWM</span><span class="p">,</span> <span class="n">ADC</span>
-<span class="kn">import</span> <span class="nn">time</span>
-
-<span class="c1"># RGB LED 설정</span>
-<span class="n">red</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">13</span><span class="p">))</span>
-<span class="n">green</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">12</span><span class="p">))</span>
-<span class="n">blue</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">14</span><span class="p">))</span>
-
-<span class="c1"># 온도 센서</span>
-<span class="n">sensor</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">set_color</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
-    <span class="n">red</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="n">r</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>
-    <span class="n">green</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="n">g</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>
-    <span class="n">blue</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="n">b</span> <span class="o">*</span> <span class="mi">4</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">read_temp</span><span class="p">():</span>
-    <span class="n">value</span> <span class="o">=</span> <span class="n">sensor</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">value</span> <span class="o">/</span> <span class="mf">1023.0</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>  <span class="c1"># 간단 변환</span>
-
-<span class="k">def</span> <span class="nf">show_temp_color</span><span class="p">(</span><span class="n">temp</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">temp</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">:</span>
-        <span class="n">set_color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>    <span class="c1"># 파랑</span>
-    <span class="k">elif</span> <span class="n">temp</span> <span class="o">&lt;</span> <span class="mi">26</span><span class="p">:</span>
-        <span class="n">set_color</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>    <span class="c1"># 초록</span>
+<p><strong>실행 결과</strong>:
+<div class="highlight"><pre><span></span><code>LED 색상 → R:255, G:0, B:0
+🔴 빨간색 빛이 켜졌습니다!
+</code></pre></div></p>
+<h3 id="step-2">Step 2: 온도에 따라 색상 결정하기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
+<p>핵심 로직을 함수로 만듭니다.</p>
+<p><strong>코드</strong>:
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_color_by_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;온도에 따라 RGB 값을 반환하는 함수&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">temp</span> <span class="o">&lt;=</span> <span class="mi">18</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>    <span class="c1"># 🔵 파랑 = 추움</span>
+    <span class="k">elif</span> <span class="n">temp</span> <span class="o">&lt;=</span> <span class="mi">28</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>    <span class="c1"># 🟢 초록 = 쾌적</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">set_color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>    <span class="c1"># 빨강</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>    <span class="c1"># 🔴 빨강 = 더움</span>
+</code></pre></div></p>
+<blockquote>
+<p>✅ <strong>체크포인트</strong>: <code>return (0, 0, 255)</code>는 R=0, G=0, B=255, 즉 파란색을 의미해요!</p>
+</blockquote>
+<h3 id="step-3-led">Step 3: 온도 입력받아 LED 표시하기<a class="headerlink" href="#step-3-led" title="Permanent link">&para;</a></h3>
+<p>사용자가 온도를 입력하면 해당하는 색상을 보여주는 부분을 만들어요.</p>
+<p><strong>코드</strong>:
+<div class="highlight"><pre><span></span><code><span class="c1"># 온도 입력받기</span>
+<span class="n">temp</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;현재 온도를 입력하세요 (°C): &quot;</span><span class="p">))</span>
 
-<span class="c1"># 실행</span>
-<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">temp</span> <span class="o">=</span> <span class="n">read_temp</span><span class="p">()</span>
-    <span class="n">show_temp_color</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;온도: </span><span class="si">{</span><span class="n">temp</span><span class="si">:</span><span class="s2">.1f</span><span class="si">}</span><span class="s2">℃&quot;</span><span class="p">)</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1"># 온도에 맞는 색상 가져오기</span>
+<span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">get_color_by_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+
+<span class="c1"># LED 색상 설정</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🌡️ 현재 온도: </span><span class="si">{</span><span class="n">temp</span><span class="si">}</span><span class="s2">°C&quot;</span><span class="p">)</span>
+<span class="n">set_led_color</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</code></pre></div></p>
+<p><strong>실행 결과</strong> (15를 입력한 경우):
+<div class="highlight"><pre><span></span><code>현재 온도를 입력하세요 (°C): 15
+🌡️ 현재 온도: 15.0°C
+LED 색상 → R:0, G:0, B:255
+🔵 파란색 빛이 켜졌습니다!
+</code></pre></div></p>
+<h3 id="step-4">Step 4: 여러 온도를 연속으로 테스트하기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
+<p>반복문으로 여러 온도를 한 번에 확인해 봅시다.</p>
+<p><strong>코드</strong>:
+<div class="highlight"><pre><span></span><code><span class="c1"># 다양한 온도를 테스트</span>
+<span class="n">test_temperatures</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">35</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">40</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🌡️ 온도별 LED 색상 표시기&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">40</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">temp</span> <span class="ow">in</span> <span class="n">test_temperatures</span><span class="p">:</span>
+    <span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">get_color_by_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+
+    <span class="c1"># 색상 이모지 결정</span>
+    <span class="k">if</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">emoji</span> <span class="o">=</span> <span class="s2">&quot;🔵&quot;</span>
+        <span class="n">status</span> <span class="o">=</span> <span class="s2">&quot;추움&quot;</span>
+    <span class="k">elif</span> <span class="n">g</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">emoji</span> <span class="o">=</span> <span class="s2">&quot;🟢&quot;</span>
+        <span class="n">status</span> <span class="o">=</span> <span class="s2">&quot;쾌적&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">emoji</span> <span class="o">=</span> <span class="s2">&quot;🔴&quot;</span>
+        <span class="n">status</span> <span class="o">=</span> <span class="s2">&quot;더움&quot;</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">temp</span><span class="si">:</span><span class="s2">&gt;4</span><span class="si">}</span><span class="s2">°C → </span><span class="si">{</span><span class="n">emoji</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">status</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<p><strong>실행 결과</strong>:
+<div class="highlight"><pre><span></span><code>========================================
+🌡️ 온도별 LED 색상 표시기
+========================================
+     5°C → 🔵 추움
+    15°C → 🔵 추움
+    20°C → 🟢 쾌적
+    25°C → 🟢 쾌적
+    30°C → 🔴 더움
+    35°C → 🔴 더움
+</code></pre></div></p>
+<blockquote>
+<p>💡 18도 이하는 파랑, 19~28도는 초록, 29도 이상은 빨강으로 잘 나뉘는 것이 보이시죠?</p>
+</blockquote>
+<hr />
+<h2 id="_5">📝 전체 코드<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>아래 코드를 복사해서 바로 실행해 보세요!</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># === 온도에 따른 LED 색상 표시기 ===</span>
+
+<span class="k">def</span> <span class="nf">set_led_color</span><span class="p">(</span><span class="n">red</span><span class="p">,</span> <span class="n">green</span><span class="p">,</span> <span class="n">blue</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;RGB LED의 색상을 설정하는 함수&quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  LED → R:</span><span class="si">{</span><span class="n">red</span><span class="si">}</span><span class="s2">, G:</span><span class="si">{</span><span class="n">green</span><span class="si">}</span><span class="s2">, B:</span><span class="si">{</span><span class="n">blue</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">get_color_by_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;온도에 따라 RGB 값을 반환하는 함수&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">temp</span> <span class="o">&lt;=</span> <span class="mi">18</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>    <span class="c1"># 파랑 = 추움</span>
+    <span class="k">elif</span> <span class="n">temp</span> <span class="o">&lt;=</span> <span class="mi">28</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>    <span class="c1"># 초록 = 쾌적</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>    <span class="c1"># 빨강 = 더움</span>
+
+<span class="c1"># --- 자동 테스트 ---</span>
+<span class="n">test_temps</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">35</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🌡️ 온도별 LED 색상 표시기&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">35</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">temp</span> <span class="ow">in</span> <span class="n">test_temps</span><span class="p">:</span>
+    <span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">get_color_by_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">emoji</span><span class="p">,</span> <span class="n">status</span> <span class="o">=</span> <span class="s2">&quot;🔵&quot;</span><span class="p">,</span> <span class="s2">&quot;추움&quot;</span>
+    <span class="k">elif</span> <span class="n">g</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">emoji</span><span class="p">,</span> <span class="n">status</span> <span class="o">=</span> <span class="s2">&quot;🟢&quot;</span><span class="p">,</span> <span class="s2">&quot;쾌적&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">emoji</span><span class="p">,</span> <span class="n">status</span> <span class="o">=</span> <span class="s2">&quot;🔴&quot;</span><span class="p">,</span> <span class="s2">&quot;더움&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;  </span><span class="si">{</span><span class="n">temp</span><span class="si">:</span><span class="s2">&gt;3</span><span class="si">}</span><span class="s2">°C → </span><span class="si">{</span><span class="n">emoji</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">status</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="n">set_led_color</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+
+<span class="c1"># --- 사용자 입력 모드 ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="mi">35</span><span class="p">)</span>
+<span class="n">temp</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;온도를 직접 입력해 보세요 (°C): &quot;</span><span class="p">))</span>
+<span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">get_color_by_temperature</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🌡️ </span><span class="si">{</span><span class="n">temp</span><span class="si">}</span><span class="s2">°C →&quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🔵 파란색 (추워요!)&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">g</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🟢 초록색 (쾌적해요!)&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🔴 빨간색 (더워요!)&quot;</span><span class="p">)</span>
+<span class="n">set_led_color</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
 </code></pre></div>
 <hr />
-<h2 id="_5">⚠️ 주의할 점<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p><strong>RGB 값 범위</strong>: 0~255 사이 값만 사용하세요!
-<div class="highlight"><pre><span></span><code><span class="c1"># ❌ 오류</span>
-<span class="n">set_color</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<h2 id="_6">⚠️ 주의할 점<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p><strong>1. 조건 순서가 중요해요!</strong></p>
+<p><code>elif</code>는 위의 조건이 거짓일 때만 검사합니다. 그래서 <code>temp &lt;= 28</code>이라고만 써도, 이미 18 이하는 위에서 걸러졌기 때문에 실제로는 19~28도 구간만 해당돼요.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># ✅ 올바른 순서</span>
+<span class="k">if</span> <span class="n">temp</span> <span class="o">&lt;=</span> <span class="mi">18</span><span class="p">:</span>      <span class="c1"># 18 이하</span>
+<span class="k">elif</span> <span class="n">temp</span> <span class="o">&lt;=</span> <span class="mi">28</span><span class="p">:</span>    <span class="c1"># 19~28 (위에서 18 이하는 이미 처리됨)</span>
+<span class="k">else</span><span class="p">:</span>               <span class="c1"># 29 이상</span>
 
-<span class="c1"># ✅ 올바름</span>
-<span class="n">set_color</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-</code></pre></div></p>
+<span class="c1"># ❌ 순서를 바꾸면 문제 발생!</span>
+<span class="k">if</span> <span class="n">temp</span> <span class="o">&lt;=</span> <span class="mi">28</span><span class="p">:</span>      <span class="c1"># 28 이하 전부(5도도 여기에 걸림!)</span>
+<span class="k">elif</span> <span class="n">temp</span> <span class="o">&lt;=</span> <span class="mi">18</span><span class="p">:</span>    <span class="c1"># 여기는 절대 실행 안 됨!</span>
+</code></pre></div>
+<p><strong>2. 입력값은 <code>float()</code>로 변환하세요!</strong></p>
+<p><code>input()</code>은 항상 문자열을 반환합니다. 숫자로 비교하려면 <code>float()</code>로 감싸야 해요.</p>
 <hr />
-<h2 id="_6">✅ 점검하기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<ol>
-<li>RGB LED에서 노란색을 만들려면 어떤 색을 섞어야 할까요?</li>
-</ol>
+<h2 id="_7">✅ 점검하기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="1-rgb-0-255-0">1. RGB 값 <code>(0, 255, 0)</code>은 무슨 색일까요?<a class="headerlink" href="#1-rgb-0-255-0" title="Permanent link">&para;</a></h3>
 <details><summary>정답 확인</summary>
-빨강 + 초록 = 노랑 → set_color(255, 255, 0)
+
+🟢 **초록색**입니다! R=0, G=255(최대), B=0이므로 초록 빛만 최대 밝기로 켜집니다.
+
 </details>
 
-<ol>
-<li>온도 기준을 20℃, 28℃로 바꾸려면 어디를 수정할까요?</li>
-</ol>
+<h3 id="2-18">2. 온도가 정확히 18도일 때, 어떤 색이 표시될까요?<a class="headerlink" href="#2-18" title="Permanent link">&para;</a></h3>
 <details><summary>정답 확인</summary>
-if temp < 20: 와 elif temp < 28: 으로 숫자만 변경!
+
+🔵 **파란색**입니다! 조건이 `temp <= 18`이므로, 18도는 "이하"에 포함되어 파란색이 됩니다.
+
+</details>
+
+<h3 id="3-10">3. "매우 추움(10도 이하)은 보라색"을 추가하려면 어디에 조건을 넣어야 할까요?<a class="headerlink" href="#3-10" title="Permanent link">&para;</a></h3>
+<details><summary>정답 확인</summary>
+
+**가장 위에** 추가해야 합니다!
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">temp</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>   <span class="c1"># 보라색 = 매우 추움</span>
+<span class="k">elif</span> <span class="n">temp</span> <span class="o">&lt;=</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>     <span class="c1"># 파랑 = 추움</span>
+<span class="k">elif</span> <span class="n">temp</span> <span class="o">&lt;=</span> <span class="mi">28</span><span class="p">:</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>     <span class="c1"># 초록 = 쾌적</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>     <span class="c1"># 빨강 = 더움</span>
+</code></pre></div>
+
+좁은 범위의 조건을 위에 놓아야 먼저 검사됩니다!
+
 </details>
 
 <hr />
-<h2 id="_7">🔗 다음 장 미리보기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>🎵 <strong>다음 장</strong>에서는 <strong>피에조 부저로 알림음 만들기</strong>를 배워요. LED와 소리를 함께 사용해볼까요?</p>
-</blockquote>
+<h2 id="_8">🔗 다음 장 미리보기<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>다음 장에서는 이번에 만든 프로그램을 더 발전시켜, <strong>센서 데이터를 자동으로 읽어오고 실시간으로 반응하는 프로그램</strong>을 만들어 봅니다. 수동 입력 대신 자동화하는 방법을 배울 거예요! 🚀</p>
 
 
 

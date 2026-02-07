@@ -9,7 +9,7 @@
         <meta name="description" content="라즈베리파이 피코2와 Grove 센서를 활용하여 프로그래밍 기초부터 AI 협업까지, 실생활 문제해결 역량을 키우는 고등학생 맞춤 코딩 입문서입니다.">
       
       
-        <meta name="author" content="Created with Data-AI-Book Generator">
+        <meta name="author" content="Created with EduFlow">
       
       
       
@@ -1185,7 +1185,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        🎯 이 장의 학습 목표
       
     </span>
   </a>
@@ -1194,6 +1194,17 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 미리 알아야 할 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -1205,38 +1216,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#map" class="md-nav__link">
+  <a href="#1-map" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: map() 함수
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔨 따라하기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-map" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: map 함수 만들기
+        개념 1: map() 함수 — 값의 범위를 바꿔주는 통역사 🌐
       
     </span>
   </a>
@@ -1244,10 +1227,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 자동 조명 완성
+        개념 2: 반비례 관계 — 어두울수록 밝게! 🔄
       
     </span>
   </a>
@@ -1263,10 +1246,71 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📝 전체 코드
+        🔨 따라하기
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: map 함수 정의하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 조도 센서 연결 및 값 읽기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 센서값을 LED 밝기로 변환하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-pwm-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: PWM으로 LED 밝기 제어하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: 반복문으로 자동 조명 완성!
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1274,7 +1318,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 주의할 점
+        📝 전체 코드
       
     </span>
   </a>
@@ -1285,7 +1329,7 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 점검하기
+        ⚠️ 주의할 점
       
     </span>
   </a>
@@ -1294,6 +1338,17 @@
       
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔗 다음 장 미리보기
@@ -2111,7 +2166,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        🎯 이 장의 학습 목표
       
     </span>
   </a>
@@ -2120,6 +2175,17 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 미리 알아야 할 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -2131,38 +2197,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#map" class="md-nav__link">
+  <a href="#1-map" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: map() 함수
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔨 따라하기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-map" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: map 함수 만들기
+        개념 1: map() 함수 — 값의 범위를 바꿔주는 통역사 🌐
       
     </span>
   </a>
@@ -2170,10 +2208,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 자동 조명 완성
+        개념 2: 반비례 관계 — 어두울수록 밝게! 🔄
       
     </span>
   </a>
@@ -2189,10 +2227,71 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📝 전체 코드
+        🔨 따라하기
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: map 함수 정의하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 조도 센서 연결 및 값 읽기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 센서값을 LED 밝기로 변환하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-pwm-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: PWM으로 LED 밝기 제어하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: 반복문으로 자동 조명 완성!
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2200,7 +2299,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 주의할 점
+        📝 전체 코드
       
     </span>
   </a>
@@ -2211,7 +2310,7 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 점검하기
+        ⚠️ 주의할 점
       
     </span>
   </a>
@@ -2220,6 +2319,17 @@
       
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔗 다음 장 미리보기
@@ -2246,76 +2356,206 @@
 
 
 
-<h1 id="22">22장. 조도에 따른 자동 조명 시스템 만들기<a class="headerlink" href="#22" title="Permanent link">&para;</a></h1>
-<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h1 id="22">챕터 22: 조도에 따른 자동 조명 시스템 만들기 💡<a class="headerlink" href="#22" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="_1">🎯 이 장의 학습 목표<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>이 장을 마치면 다음을 할 수 있습니다:</p>
 <ul>
-<li>[ ] <code>map()</code> 함수로 값의 범위를 변환할 수 있다</li>
-<li>[ ] 어두워지면 LED가 밝아지는 자동 조명을 만들 수 있다</li>
+<li>[ ] <code>map()</code> 함수로 값의 범위를 변환하는 방법을 이해한다</li>
+<li>[ ] 조도 값에 따라 LED 밝기를 자동 조절하는 프로그램을 작성할 수 있다</li>
 </ul>
+<p><strong>예상 학습 시간</strong>: 약 40분</p>
+<h2 id="_2">📚 미리 알아야 할 것<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>이전 장에서 배운 내용을 간단히 떠올려 볼까요?</p>
+<ul>
+<li><strong>조도 센서</strong>로 빛의 밝기를 숫자(0~65535)로 읽는 방법</li>
+<li><strong>PWM</strong>으로 LED 밝기를 조절하는 방법 (0~100%)</li>
+<li><code>if</code> 조건문으로 상황에 따라 다르게 동작시키는 방법</li>
+</ul>
+<hr />
+<h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1-map">개념 1: map() 함수 — 값의 범위를 바꿔주는 통역사 🌐<a class="headerlink" href="#1-map" title="Permanent link">&para;</a></h3>
+<p><strong>비유로 시작할게요.</strong></p>
+<p>여러분이 미국 여행을 갔다고 상상해 보세요. 온도계가 <strong>77°F(화씨)</strong>를 가리키고 있어요. 이게 더운 건지 추운 건지 감이 안 잡히죠? 이때 <strong>"화씨 → 섭씨 변환"</strong>을 하면 <strong>25°C</strong>라는 걸 알 수 있어요.</p>
+<p><code>map()</code> 함수가 바로 이런 <strong>통역사</strong> 역할을 합니다!</p>
+<p><strong>정확한 정의:</strong></p>
 <blockquote>
-<p>⏱️ <strong>예상 학습 시간</strong>: 약 15분</p>
+<p><code>map(값, 원래 최솟값, 원래 최댓값, 변환 최솟값, 변환 최댓값)</code>
+→ 원래 범위의 값을 새로운 범위의 값으로 <strong>비례 변환</strong>합니다.</p>
 </blockquote>
-<hr />
-<h2 id="_2">📚 핵심 개념<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="map">개념: map() 함수<a class="headerlink" href="#map" title="Permanent link">&para;</a></h3>
-<p><strong>비유</strong>: <code>map()</code>은 <strong>번역기</strong>와 같아요!</p>
-<p>조도 센서는 0~65535 범위의 숫자를 말하고, LED는 0~100 범위만 이해해요. <code>map()</code> 함수가 이 둘 사이를 번역해줍니다.</p>
-<div class="mermaid">flowchart LR
-    A["조도 센서&lt;br/&gt;0~65535"] --&gt; B["map() 번역기"]
-    B --&gt; C["LED 밝기&lt;br/&gt;0~100"]
-    style B fill:#fff3e0,stroke:#f57c00</div>
-<p><strong>형식</strong>:
-<div class="highlight"><pre><span></span><code><span class="nb">map</span><span class="p">(</span><span class="n">값</span><span class="p">,</span> <span class="n">원래_최소</span><span class="p">,</span> <span class="n">원래_최대</span><span class="p">,</span> <span class="n">새_최소</span><span class="p">,</span> <span class="n">새_최대</span><span class="p">)</span>
-</code></pre></div></p>
-<hr />
-<h2 id="_3">🔨 따라하기<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="step-1-map">Step 1: map 함수 만들기<a class="headerlink" href="#step-1-map" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">map</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">from_min</span><span class="p">,</span> <span class="n">from_max</span><span class="p">,</span> <span class="n">to_min</span><span class="p">,</span> <span class="n">to_max</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">value</span> <span class="o">-</span> <span class="n">from_min</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">to_max</span> <span class="o">-</span> <span class="n">to_min</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">from_max</span> <span class="o">-</span> <span class="n">from_min</span><span class="p">)</span> <span class="o">+</span> <span class="n">to_min</span>
-</code></pre></div>
-<h3 id="step-2">Step 2: 자동 조명 완성<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="c1"># 어두우면(값 작음) → LED 밝게(값 큼)</span>
-<span class="n">brightness</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">light</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">65535</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># 순서 반대!</span>
-<span class="n">led</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="n">brightness</span><span class="p">)</span>
-</code></pre></div>
-<hr />
-<h2 id="_4">📝 전체 코드<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">ADC</span><span class="p">,</span> <span class="n">PWM</span>
-<span class="kn">import</span> <span class="nn">time</span>
-
-<span class="c1"># 설정</span>
-<span class="n">cds</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">34</span><span class="p">))</span>
-<span class="n">led</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">15</span><span class="p">),</span> <span class="n">freq</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
-
+<p><strong>예시로 확인:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 조도 센서값(0~65535)을 LED 밝기(0~100)로 변환</span>
 <span class="k">def</span> <span class="nf">map</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">from_min</span><span class="p">,</span> <span class="n">from_max</span><span class="p">,</span> <span class="n">to_min</span><span class="p">,</span> <span class="n">to_max</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">value</span> <span class="o">-</span> <span class="n">from_min</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">to_max</span> <span class="o">-</span> <span class="n">to_min</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">from_max</span> <span class="o">-</span> <span class="n">from_min</span><span class="p">)</span> <span class="o">+</span> <span class="n">to_min</span>
 
-<span class="c1"># 실행</span>
+<span class="c1"># 센서값이 32768이면? (중간 밝기)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="mi">32768</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">65535</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>  <span class="c1"># 약 50.0 → LED 밝기 50%</span>
+</code></pre></div>
+<div class="mermaid">flowchart LR
+    A["조도 센서값&lt;br&gt;0 ~ 65535"] --&gt;|"map() 변환"| B["LED 밝기&lt;br&gt;0 ~ 100"]
+    style A fill:#e3f2fd,stroke:#1976d2
+    style B fill:#fff3e0,stroke:#f57c00</div>
+<h3 id="2">개념 2: 반비례 관계 — 어두울수록 밝게! 🔄<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>가로등을 떠올려 보세요. <strong>주변이 어두우면</strong> 가로등이 <strong>환하게</strong> 켜지고, <strong>낮에는</strong> 꺼져 있죠.</p>
+<p>즉, 조도 센서값과 LED 밝기는 <strong>반대로</strong> 움직여야 합니다:</p>
+<table>
+<thead>
+<tr>
+<th>주변 밝기</th>
+<th>조도 센서값</th>
+<th>LED 밝기</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>☀️ 아주 밝음</td>
+<td>65535 (높음)</td>
+<td>0% (꺼짐)</td>
+</tr>
+<tr>
+<td>🌤️ 보통</td>
+<td>32768 (중간)</td>
+<td>50% (중간)</td>
+</tr>
+<tr>
+<td>🌙 어두움</td>
+<td>0 (낮음)</td>
+<td>100% (최대)</td>
+</tr>
+</tbody>
+</table>
+<p>이 반비례를 <code>map()</code> 함수로 구현하려면, <strong>변환 범위를 뒤집으면</strong> 됩니다:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 핵심: to_min과 to_max를 뒤집기!</span>
+<span class="n">brightness</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">sensor_value</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">65535</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="c1">#                                        ↑    ↑</span>
+<span class="c1">#                               100에서 0으로 = 반비례!</span>
+</code></pre></div>
+<blockquote>
+<p>💡 <strong>잠깐!</strong> 여기까지 이해가 잘 되셨나요?
+<code>map()</code> 함수는 결국 <strong>비례식 계산을 대신 해주는 편리한 도구</strong>예요. 수학 공식을 외울 필요 없이 "어디서 어디로 바꿀지"만 알려주면 됩니다!</p>
+</blockquote>
+<hr />
+<h2 id="_4">🔨 따라하기<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-map">Step 1: map 함수 정의하기<a class="headerlink" href="#step-1-map" title="Permanent link">&para;</a></h3>
+<p>마이크로파이썬에는 <code>map()</code> 함수가 내장되어 있지 않으므로, 직접 만들어 줍니다.</p>
+<p><strong>코드:</strong>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">map</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">from_min</span><span class="p">,</span> <span class="n">from_max</span><span class="p">,</span> <span class="n">to_min</span><span class="p">,</span> <span class="n">to_max</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">value</span> <span class="o">-</span> <span class="n">from_min</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">to_max</span> <span class="o">-</span> <span class="n">to_min</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">from_max</span> <span class="o">-</span> <span class="n">from_min</span><span class="p">)</span> <span class="o">+</span> <span class="n">to_min</span>
+</code></pre></div></p>
+<blockquote>
+<p>✅ <strong>체크포인트</strong>: 이 함수는 앞으로 계속 사용할 거예요. 의미를 이해하는 게 중요합니다!</p>
+</blockquote>
+<h3 id="step-2">Step 2: 조도 센서 연결 및 값 읽기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
+<p><strong>코드:</strong>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">ADC</span><span class="p">,</span> <span class="n">Pin</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="n">sensor</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">26</span><span class="p">))</span>  <span class="c1"># 조도 센서 → GP26</span>
+
+<span class="n">value</span> <span class="o">=</span> <span class="n">sensor</span><span class="o">.</span><span class="n">read_u16</span><span class="p">()</span>  <span class="c1"># 0~65535 범위의 값</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;조도 센서값:&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</code></pre></div></p>
+<p><strong>실행 결과:</strong>
+<div class="highlight"><pre><span></span><code>조도 센서값: 42130
+</code></pre></div></p>
+<h3 id="step-3-led">Step 3: 센서값을 LED 밝기로 변환하기<a class="headerlink" href="#step-3-led" title="Permanent link">&para;</a></h3>
+<p>어두울수록 밝게! 반비례 변환을 적용합니다.</p>
+<p><strong>코드:</strong>
+<div class="highlight"><pre><span></span><code><span class="n">brightness</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">65535</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># 반비례!</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;LED 밝기:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">brightness</span><span class="p">),</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
+</code></pre></div></p>
+<p><strong>실행 결과:</strong>
+<div class="highlight"><pre><span></span><code>LED 밝기: 36 %
+</code></pre></div></p>
+<h3 id="step-4-pwm-led">Step 4: PWM으로 LED 밝기 제어하기<a class="headerlink" href="#step-4-pwm-led" title="Permanent link">&para;</a></h3>
+<p><strong>코드:</strong>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">PWM</span>
+
+<span class="n">led</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">15</span><span class="p">))</span>       <span class="c1"># LED → GP15</span>
+<span class="n">led</span><span class="o">.</span><span class="n">freq</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>           <span class="c1"># 주파수 설정</span>
+
+<span class="c1"># 밝기(0~100)를 PWM 듀티값(0~65535)으로 변환</span>
+<span class="n">duty</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">brightness</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">65535</span><span class="p">))</span>
+<span class="n">led</span><span class="o">.</span><span class="n">duty_u16</span><span class="p">(</span><span class="n">duty</span><span class="p">)</span>
+</code></pre></div></p>
+<h3 id="step-5">Step 5: 반복문으로 자동 조명 완성!<a class="headerlink" href="#step-5" title="Permanent link">&para;</a></h3>
+<p><strong>코드:</strong>
+<div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="n">sensor</span><span class="o">.</span><span class="n">read_u16</span><span class="p">()</span>
+    <span class="n">brightness</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">65535</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># 반비례 변환</span>
+    <span class="n">duty</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">brightness</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">65535</span><span class="p">))</span>
+    <span class="n">led</span><span class="o">.</span><span class="n">duty_u16</span><span class="p">(</span><span class="n">duty</span><span class="p">)</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;센서:&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="s2">&quot;→ 밝기:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">brightness</span><span class="p">),</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
+</code></pre></div></p>
+<p><strong>실행 결과:</strong>
+<div class="highlight"><pre><span></span><code>센서: 58000 → 밝기: 12 %
+센서: 30000 → 밝기: 54 %
+센서: 5000 → 밝기: 92 %
+</code></pre></div></p>
+<p>손으로 센서를 가리면 LED가 밝아지고, 빛을 비추면 LED가 어두워지는 것을 확인하세요! 🎉</p>
+<hr />
+<h2 id="_5">📝 전체 코드<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">machine</span> <span class="kn">import</span> <span class="n">ADC</span><span class="p">,</span> <span class="n">Pin</span><span class="p">,</span> <span class="n">PWM</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="c1"># map 함수 정의</span>
+<span class="k">def</span> <span class="nf">map</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">from_min</span><span class="p">,</span> <span class="n">from_max</span><span class="p">,</span> <span class="n">to_min</span><span class="p">,</span> <span class="n">to_max</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">value</span> <span class="o">-</span> <span class="n">from_min</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">to_max</span> <span class="o">-</span> <span class="n">to_min</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">from_max</span> <span class="o">-</span> <span class="n">from_min</span><span class="p">)</span> <span class="o">+</span> <span class="n">to_min</span>
+
+<span class="c1"># 하드웨어 설정</span>
+<span class="n">sensor</span> <span class="o">=</span> <span class="n">ADC</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">26</span><span class="p">))</span>    <span class="c1"># 조도 센서</span>
+<span class="n">led</span> <span class="o">=</span> <span class="n">PWM</span><span class="p">(</span><span class="n">Pin</span><span class="p">(</span><span class="mi">15</span><span class="p">))</span>       <span class="c1"># LED</span>
+<span class="n">led</span><span class="o">.</span><span class="n">freq</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+
+<span class="c1"># 자동 조명 루프</span>
 <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">light</span> <span class="o">=</span> <span class="n">cds</span><span class="o">.</span><span class="n">read_u16</span><span class="p">()</span>
-    <span class="n">brightness</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">light</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">65535</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
-    <span class="n">led</span><span class="o">.</span><span class="n">duty</span><span class="p">(</span><span class="n">brightness</span><span class="p">)</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="n">sensor</span><span class="o">.</span><span class="n">read_u16</span><span class="p">()</span>                    <span class="c1"># 센서 읽기</span>
+    <span class="n">brightness</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">65535</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>    <span class="c1"># 반비례 변환</span>
+    <span class="n">duty</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">brightness</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">65535</span><span class="p">))</span>
+    <span class="n">led</span><span class="o">.</span><span class="n">duty_u16</span><span class="p">(</span><span class="n">duty</span><span class="p">)</span>                           <span class="c1"># LED 밝기 적용</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;센서:&quot;</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="s2">&quot;→ 밝기:&quot;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">brightness</span><span class="p">),</span> <span class="s2">&quot;%&quot;</span><span class="p">)</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
 </code></pre></div>
 <hr />
-<h2 id="_5">⚠️ 주의할 점<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<p><strong>밝기 반전 잊지 마세요!</strong>
-- 어두울 때(조도↓) LED 밝게(밝기↑) → <code>map(..., 100, 0)</code> 순서!</p>
-<hr />
-<h2 id="_6">✅ 점검하기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h2 id="_6">⚠️ 주의할 점<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <ol>
-<li><code>map(32767, 0, 65535, 0, 100)</code>의 결과는?</li>
+<li>
+<p><strong><code>map()</code> 결과는 소수점이 나와요!</strong> <code>duty_u16()</code>에는 정수만 넣을 수 있으므로 반드시 <code>int()</code>로 감싸주세요.</p>
+</li>
+<li>
+<p><strong>센서를 완전히 가려도 0이 안 나올 수 있어요.</strong> 실제 환경에서는 센서 범위를 테스트한 뒤 <code>from_min</code>, <code>from_max</code> 값을 조정하면 더 정확한 반응을 얻을 수 있습니다.</p>
+</li>
 </ol>
-<details><summary>정답 확인</summary>약 50 (중간값은 중간으로 변환)</details>
+<hr />
+<h2 id="_7">✅ 점검하기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p><strong>1. <code>map(100, 0, 200, 0, 50)</code>의 결과는?</strong></p>
+<details><summary>정답 확인</summary>
 
-<ol>
-<li>가로등은 왜 밤에 자동으로 켜질까요?</li>
-</ol>
-<details><summary>정답 확인</summary>조도 센서가 어두움을 감지하면 조명을 켜도록 프로그래밍되어 있기 때문</details>
+**25.0**입니다. 100은 0~200 범위에서 딱 절반(50%) 위치이고, 0~50 범위의 절반은 25이기 때문입니다.
+
+</details>
+
+<p><strong>2. 어두울수록 LED를 밝게 하려면 map() 함수를 어떻게 써야 할까요?</strong></p>
+<details><summary>정답 확인</summary>
+
+변환 범위를 **뒤집어서** 작성합니다: `map(value, 0, 65535, 100, 0)` — 센서값이 0(어두움)이면 밝기 100, 센서값이 65535(밝음)이면 밝기 0이 됩니다.
+
+</details>
+
+<p><strong>3. 이 원리가 적용된 실생활 예시를 하나 말해보세요.</strong></p>
+<details><summary>정답 확인</summary>
+
+**가로등** — 해가 지면 자동으로 켜지고 해가 뜨면 꺼집니다. **자동차 계기판 조명** — 터널에 들어가면 밝아지고, 밝은 곳에서는 어두워집니다.
+
+</details>
 
 <hr />
-<h2 id="_7">🔗 다음 장 미리보기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<p>다음 장에서는 <strong>초음파 센서</strong>로 거리를 측정해볼 거예요! 🦇</p>
+<h2 id="_8">🔗 다음 장 미리보기<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>다음 장에서는 <strong>온도 센서를 활용한 스마트 선풍기</strong>를 만들어 볼 거예요. 온도에 따라 모터 속도를 자동으로 조절하는 시스템인데, 오늘 배운 <code>map()</code> 함수가 다시 등장합니다. 기대해 주세요! 🌡️🌀</p>
 
 
 

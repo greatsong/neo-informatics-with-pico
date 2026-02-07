@@ -9,7 +9,7 @@
         <meta name="description" content="라즈베리파이 피코2와 Grove 센서를 활용하여 프로그래밍 기초부터 AI 협업까지, 실생활 문제해결 역량을 키우는 고등학생 맞춤 코딩 입문서입니다.">
       
       
-        <meta name="author" content="Created with Data-AI-Book Generator">
+        <meta name="author" content="Created with EduFlow">
       
       
       
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#23" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -1210,10 +1210,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 이 장의 학습 목표
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        📚 미리 알아야 할 것
       
     </span>
   </a>
@@ -1233,10 +1244,93 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#1-threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 1: 임계값(Threshold)으로 구간 나누기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: 경보 간격으로 긴급도 표현하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: 임계값 기반 단계 분류
+        🔨 따라하기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 회로 연결 확인
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 거리 측정 함수 작성
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 구간별 경보 로직 작성
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 전체 조합하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: 테스트하고 임계값 조절하기
       
     </span>
   </a>
@@ -1252,45 +1346,6 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔨 따라하기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: 거리 단계 판별 함수 만들기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 2: 단계별 경보음 설정
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         📝 전체 코드
       
     </span>
@@ -1299,7 +1354,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         ⚠️ 주의할 점
@@ -1310,7 +1365,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         ✅ 점검하기
@@ -1321,7 +1376,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔗 다음 장 미리보기
@@ -2108,10 +2163,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎯 이 장의 학습 목표
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        📚 미리 알아야 할 것
       
     </span>
   </a>
@@ -2131,10 +2197,93 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#1-threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 1: 임계값(Threshold)으로 구간 나누기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        개념 2: 경보 간격으로 긴급도 표현하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: 임계값 기반 단계 분류
+        🔨 따라하기
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 회로 연결 확인
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: 거리 측정 함수 작성
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 구간별 경보 로직 작성
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 전체 조합하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: 테스트하고 임계값 조절하기
       
     </span>
   </a>
@@ -2150,45 +2299,6 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔨 따라하기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: 거리 단계 판별 함수 만들기
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 2: 단계별 경보음 설정
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         📝 전체 코드
       
     </span>
@@ -2197,7 +2307,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         ⚠️ 주의할 점
@@ -2208,7 +2318,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         ✅ 점검하기
@@ -2219,7 +2329,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔗 다음 장 미리보기
@@ -2246,153 +2356,281 @@
 
 
 
-<h1 id="_1">초음파 센서로 거리 경보 시스템 만들기<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">🎯 이 장에서 배우는 것<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h1 id="23">챕터 23: 초음파 센서로 거리 경보 시스템 만들기<a class="headerlink" href="#23" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="_1">🎯 이 장의 학습 목표<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <ul>
 <li>[ ] 거리에 따라 다른 경보음을 내는 프로그램을 작성할 수 있다</li>
 <li>[ ] 연속적인 값을 단계별로 구분하는 알고리즘을 구현할 수 있다</li>
 </ul>
-<blockquote>
-<p>⏱️ <strong>예상 학습 시간</strong>: 약 45분</p>
-</blockquote>
+<p><strong>예상 학습 시간</strong>: 약 40분</p>
+<h2 id="_2">📚 미리 알아야 할 것<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>초음파 센서로 거리 값을 읽는 방법 (이전 챕터에서 학습)</li>
+<li><code>if-elif-else</code> 조건문 사용법</li>
+<li>부저(buzzer)로 소리 내는 기본 방법</li>
+</ul>
 <hr />
 <h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="_4">개념: 임계값 기반 단계 분류<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<p><strong>비유로 시작해요!</strong></p>
-<p>신호등을 떠올려 보세요. 🚦</p>
-<ul>
-<li><strong>초록불</strong> → 안전, 지나가세요</li>
-<li><strong>노란불</strong> → 주의, 속도를 줄이세요  </li>
-<li><strong>빨간불</strong> → 위험, 멈추세요</li>
-</ul>
-<p>거리 경보 시스템도 똑같아요! 측정된 거리를 <strong>임계값(기준점)</strong>으로 나눠서 단계별로 다른 반응을 만들어요.</p>
+<h3 id="1-threshold">개념 1: 임계값(Threshold)으로 구간 나누기<a class="headerlink" href="#1-threshold" title="Permanent link">&para;</a></h3>
+<p>자동차 후방 센서를 떠올려 보세요. 장애물이 멀면 "삐---삐---" 느리게, 가까우면 "삐삐삐삐" 빠르게 울리죠?</p>
+<p>이걸 만들려면 <strong>연속적인 거리 값</strong>을 <strong>몇 개의 구간</strong>으로 나눠야 합니다. 이때 구간을 나누는 기준점을 <strong>임계값(Threshold)</strong>이라고 해요.</p>
+<div class="highlight"><pre><span></span><code>거리(cm):  0 ──────── 10 ──────── 20 ──────── 30 이상
+구간:        🔴 위험      🟡 주의       🟢 안전
+</code></pre></div>
+<blockquote>
+<p>마치 시험 점수를 등급으로 나누는 것과 같아요.
+90점 이상 A, 70점 이상 B, 나머지 C — 여기서 90과 70이 임계값입니다!</p>
+</blockquote>
+<p><strong>코드로 표현하면:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="c1"># 위험 구간</span>
+<span class="k">elif</span> <span class="n">distance</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">:</span>
+    <span class="c1"># 주의 구간</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># 안전 구간</span>
+</code></pre></div>
+<h3 id="2">개념 2: 경보 간격으로 긴급도 표현하기<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<p>소리의 <strong>주파수(높낮이)</strong>와 <strong>간격(빠르기)</strong>을 조합하면 사람이 직관적으로 위험 수준을 느낄 수 있어요.</p>
+<table>
+<thead>
+<tr>
+<th>구간</th>
+<th>거리</th>
+<th>소리 주파수</th>
+<th>소리 간격</th>
+<th>느낌</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🟢 안전</td>
+<td>20cm 이상</td>
+<td>소리 없음</td>
+<td>-</td>
+<td>여유</td>
+</tr>
+<tr>
+<td>🟡 주의</td>
+<td>10~20cm</td>
+<td>1000Hz</td>
+<td>0.5초</td>
+<td>주의</td>
+</tr>
+<tr>
+<td>🔴 위험</td>
+<td>10cm 미만</td>
+<td>2000Hz</td>
+<td>0.1초</td>
+<td>긴급!</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>핵심 원리</strong>: 가까울수록 → 높은 음 + 짧은 간격 = 긴급한 느낌!</p>
+</blockquote>
+<hr />
+<h2 id="_4">🔨 따라하기<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="step-1">Step 1: 회로 연결 확인<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
+<p>초음파 센서(HC-SR04)와 부저를 아두이노에 연결합니다.</p>
+<table>
+<thead>
+<tr>
+<th>부품</th>
+<th>아두이노 핀</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>초음파 Trig</td>
+<td>D7</td>
+</tr>
+<tr>
+<td>초음파 Echo</td>
+<td>D8</td>
+</tr>
+<tr>
+<td>부저(+)</td>
+<td>D11</td>
+</tr>
+<tr>
+<td>부저(-)</td>
+<td>GND</td>
+</tr>
+</tbody>
+</table>
 <div class="mermaid">flowchart LR
-    A[거리 측정] --&gt; B{30cm 이상?}
-    B --&gt;|Yes| C[🟢 안전]
-    B --&gt;|No| D{15cm 이상?}
-    D --&gt;|Yes| E[🟡 주의]
-    D --&gt;|No| F[🔴 위험]</div>
-<p><strong>정확한 정의</strong></p>
-<blockquote>
-<p>📖 <strong>임계값(Threshold)</strong>: 상태가 바뀌는 기준점이 되는 값</p>
-</blockquote>
-<hr />
-<h2 id="_5">🔨 따라하기<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<h3 id="step-1">Step 1: 거리 단계 판별 함수 만들기<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
-<p><strong>코드</strong>:
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_danger_level</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;거리에 따라 위험 단계 반환&quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">distance</span> <span class="o">&gt;=</span> <span class="mi">30</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;safe&quot;</span>      <span class="c1"># 안전</span>
-    <span class="k">elif</span> <span class="n">distance</span> <span class="o">&gt;=</span> <span class="mi">15</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;warning&quot;</span>   <span class="c1"># 주의</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;danger&quot;</span>    <span class="c1"># 위험</span>
-</code></pre></div></p>
-<h3 id="step-2">Step 2: 단계별 경보음 설정<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
-<p><strong>코드</strong>:
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">alert_by_level</span><span class="p">(</span><span class="n">level</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;단계에 따라 다른 경보&quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">level</span> <span class="o">==</span> <span class="s2">&quot;safe&quot;</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🟢 안전 - 경보 없음&quot;</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">level</span> <span class="o">==</span> <span class="s2">&quot;warning&quot;</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🟡 주의 - 삐- 삐-&quot;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🔴 위험 - 삐삐삐삐!&quot;</span><span class="p">)</span>
-</code></pre></div></p>
-<p><strong>실행 테스트</strong>:
-<div class="highlight"><pre><span></span><code><span class="c1"># 테스트해보기</span>
-<span class="n">test_distances</span> <span class="o">=</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+    A["🔌 아두이노"] --&gt; B["📡 초음파 센서\nTrig: D7 / Echo: D8"]
+    A --&gt; C["🔔 부저\n신호: D11"]
+    B --&gt; D["거리 측정"]
+    D --&gt; E["구간 판단"]
+    E --&gt; C</div>
+<h3 id="step-2">Step 2: 거리 측정 함수 작성<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1">// 핀 설정</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">trigPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">echoPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">buzzerPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">11</span><span class="p">;</span>
 
-<span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">test_distances</span><span class="p">:</span>
-    <span class="n">level</span> <span class="o">=</span> <span class="n">get_danger_level</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;거리: </span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s2">cm&quot;</span><span class="p">)</span>
-    <span class="n">alert_by_level</span><span class="p">(</span><span class="n">level</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">()</span>
-</code></pre></div></p>
-<p><strong>실행 결과</strong>:
-<div class="highlight"><pre><span></span><code>거리: 50cm
-🟢 안전 - 경보 없음
+<span class="kt">long</span><span class="w"> </span><span class="nf">getDistance</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+<span class="w">  </span><span class="n">delayMicroseconds</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="w">  </span><span class="n">delayMicroseconds</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
 
-거리: 20cm
-🟡 주의 - 삐- 삐-
-
-거리: 10cm
-🔴 위험 - 삐삐삐삐!
-</code></pre></div></p>
-<hr />
-<h2 id="_6">📝 전체 코드<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># 거리 경보 시스템</span>
-
-<span class="k">def</span> <span class="nf">get_danger_level</span><span class="p">(</span><span class="n">distance</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;거리에 따라 위험 단계 반환&quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="n">distance</span> <span class="o">&gt;=</span> <span class="mi">30</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;safe&quot;</span>
-    <span class="k">elif</span> <span class="n">distance</span> <span class="o">&gt;=</span> <span class="mi">15</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;warning&quot;</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="s2">&quot;danger&quot;</span>
-
-<span class="k">def</span> <span class="nf">alert_by_level</span><span class="p">(</span><span class="n">level</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;단계에 따라 다른 경보&quot;&quot;&quot;</span>
-    <span class="n">alerts</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="s2">&quot;safe&quot;</span><span class="p">:</span> <span class="s2">&quot;🟢 안전 - 경보 없음&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;warning&quot;</span><span class="p">:</span> <span class="s2">&quot;🟡 주의 - 삐- 삐-&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;danger&quot;</span><span class="p">:</span> <span class="s2">&quot;🔴 위험 - 삐삐삐삐!&quot;</span>
-    <span class="p">}</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">alerts</span><span class="p">[</span><span class="n">level</span><span class="p">])</span>
-
-<span class="c1"># 시뮬레이션 실행</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;=== 거리 경보 시스템 테스트 ===</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">distance</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">]:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;📏 측정 거리: </span><span class="si">{</span><span class="n">distance</span><span class="si">}</span><span class="s2">cm&quot;</span><span class="p">)</span>
-    <span class="n">level</span> <span class="o">=</span> <span class="n">get_danger_level</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
-    <span class="n">alert_by_level</span><span class="p">(</span><span class="n">level</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">()</span>
+<span class="w">  </span><span class="kt">long</span><span class="w"> </span><span class="n">duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pulseIn</span><span class="p">(</span><span class="n">echoPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">long</span><span class="w"> </span><span class="n">distance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">duration</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.034</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w">  </span><span class="c1">// cm 단위</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">distance</span><span class="p">;</span>
+<span class="p">}</span>
 </code></pre></div>
-<hr />
-<h2 id="_7">⚠️ 주의할 점<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<p><strong>임계값 순서가 중요해요!</strong></p>
-<div class="highlight"><pre><span></span><code><span class="c1"># ❌ 잘못된 순서</span>
-<span class="k">if</span> <span class="n">distance</span> <span class="o">&gt;=</span> <span class="mi">15</span><span class="p">:</span>    <span class="c1"># 20cm도 여기서 걸림!</span>
-    <span class="k">return</span> <span class="s2">&quot;warning&quot;</span>
-<span class="k">elif</span> <span class="n">distance</span> <span class="o">&gt;=</span> <span class="mi">30</span><span class="p">:</span>  <span class="c1"># 절대 실행 안 됨</span>
-    <span class="k">return</span> <span class="s2">&quot;safe&quot;</span>
-
-<span class="c1"># ✅ 올바른 순서 (큰 값부터!)</span>
-<span class="k">if</span> <span class="n">distance</span> <span class="o">&gt;=</span> <span class="mi">30</span><span class="p">:</span>
-    <span class="k">return</span> <span class="s2">&quot;safe&quot;</span>
-<span class="k">elif</span> <span class="n">distance</span> <span class="o">&gt;=</span> <span class="mi">15</span><span class="p">:</span>
-    <span class="k">return</span> <span class="s2">&quot;warning&quot;</span>
+<h3 id="step-3">Step 3: 구간별 경보 로직 작성<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
+<p>이 부분이 이번 챕터의 <strong>핵심</strong>이에요! 임계값으로 구간을 나누고, 각 구간마다 다른 반응을 만듭니다.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">alarm</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">distance</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">distance</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// 🔴 위험: 높은 음, 빠른 간격</span>
+<span class="w">    </span><span class="n">tone</span><span class="p">(</span><span class="n">buzzerPin</span><span class="p">,</span><span class="w"> </span><span class="mi">2000</span><span class="p">);</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="w">    </span><span class="n">noTone</span><span class="p">(</span><span class="n">buzzerPin</span><span class="p">);</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">distance</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">20</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// 🟡 주의: 중간 음, 보통 간격</span>
+<span class="w">    </span><span class="n">tone</span><span class="p">(</span><span class="n">buzzerPin</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">);</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span>
+<span class="w">    </span><span class="n">noTone</span><span class="p">(</span><span class="n">buzzerPin</span><span class="p">);</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="w">  </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// 🟢 안전: 소리 없음</span>
+<span class="w">    </span><span class="n">noTone</span><span class="p">(</span><span class="n">buzzerPin</span><span class="p">);</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
-<blockquote>
-<p>💡 <strong>팁</strong>: 조건문은 <strong>큰 값 → 작은 값</strong> 순서로 검사하세요!</p>
-</blockquote>
-<hr />
-<h2 id="_8">✅ 점검하기<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="step-4">Step 4: 전체 조합하기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
+<p><code>setup()</code>과 <code>loop()</code>에서 모든 것을 연결합니다.</p>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">echoPin</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span>
+<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">buzzerPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">long</span><span class="w"> </span><span class="n">distance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getDistance</span><span class="p">();</span>
+
+<span class="w">  </span><span class="c1">// 시리얼 모니터에 거리 출력</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;거리: &quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">distance</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot; cm&quot;</span><span class="p">);</span>
+
+<span class="w">  </span><span class="c1">// 구간별 경보</span>
+<span class="w">  </span><span class="n">alarm</span><span class="p">(</span><span class="n">distance</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="step-5">Step 5: 테스트하고 임계값 조절하기<a class="headerlink" href="#step-5" title="Permanent link">&para;</a></h3>
 <ol>
-<li><strong>25cm일 때 어떤 단계인가요?</strong></li>
+<li><strong>업로드</strong> 후 시리얼 모니터를 열어 거리 값을 확인하세요</li>
+<li><strong>손을 센서 앞에서 천천히</strong> 가까이/멀리 움직여 보세요</li>
+<li>경보음이 구간별로 달라지는지 확인!</li>
 </ol>
+<blockquote>
+<p>✅ <strong>체크포인트</strong>: 손을 가까이하면 "삐삐삐" 빠르게, 멀리하면 소리가 멈추나요?</p>
+</blockquote>
+<p>환경에 따라 임계값을 조절해 보세요. 예를 들어 책상이 좁다면:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// 기존: 10, 20</span>
+<span class="c1">// 변경: 5, 15 — 더 가까운 거리에서 반응</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">distance</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+<span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">distance</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">15</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">}</span>
+</code></pre></div>
+<blockquote>
+<p>💡 <strong>잠깐!</strong> 여기까지 잘 따라오셨나요?
+임계값을 바꿔보는 것만으로도 시스템의 민감도가 달라지는 걸 느낄 수 있어요. 이게 바로 알고리즘 튜닝입니다!</p>
+</blockquote>
+<hr />
+<h2 id="_5">📝 전체 코드<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">trigPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">echoPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8</span><span class="p">;</span>
+<span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">buzzerPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">11</span><span class="p">;</span>
+
+<span class="kt">long</span><span class="w"> </span><span class="nf">getDistance</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+<span class="w">  </span><span class="n">delayMicroseconds</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="w">  </span><span class="n">delayMicroseconds</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span><span class="w"> </span><span class="n">LOW</span><span class="p">);</span>
+<span class="w">  </span><span class="kt">long</span><span class="w"> </span><span class="n">duration</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">pulseIn</span><span class="p">(</span><span class="n">echoPin</span><span class="p">,</span><span class="w"> </span><span class="n">HIGH</span><span class="p">);</span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">duration</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">0.034</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">alarm</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">distance</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">distance</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">tone</span><span class="p">(</span><span class="n">buzzerPin</span><span class="p">,</span><span class="w"> </span><span class="mi">2000</span><span class="p">);</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="w">    </span><span class="n">noTone</span><span class="p">(</span><span class="n">buzzerPin</span><span class="p">);</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">distance</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">20</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">tone</span><span class="p">(</span><span class="n">buzzerPin</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">);</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span>
+<span class="w">    </span><span class="n">noTone</span><span class="p">(</span><span class="n">buzzerPin</span><span class="p">);</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">300</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">noTone</span><span class="p">(</span><span class="n">buzzerPin</span><span class="p">);</span>
+<span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">500</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">trigPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">echoPin</span><span class="p">,</span><span class="w"> </span><span class="n">INPUT</span><span class="p">);</span>
+<span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">buzzerPin</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">long</span><span class="w"> </span><span class="n">distance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getDistance</span><span class="p">();</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">&quot;거리: &quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">distance</span><span class="p">);</span>
+<span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">&quot; cm&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">alarm</span><span class="p">(</span><span class="n">distance</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<hr />
+<h2 id="_6">⚠️ 주의할 점<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><strong>초음파 센서 측정 범위</strong>: HC-SR04는 2~400cm을 측정해요. 2cm 미만이면 <strong>0이나 비정상 값</strong>이 나올 수 있으니, <code>if (distance &gt; 0 &amp;&amp; distance &lt; 10)</code> 처럼 하한 조건도 넣으면 더 안정적이에요.</p>
+</li>
+<li>
+<p><strong>delay가 경보 간격을 결정</strong>: <code>delay()</code> 값이 곧 "삐" 소리의 길이와 쉬는 시간이에요. 너무 길면 반응이 느려지고, 너무 짧으면 소리가 뭉개질 수 있어요.</p>
+</li>
+</ol>
+<hr />
+<h2 id="_7">✅ 점검하기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p><strong>1. 임계값이 10, 20일 때, 거리가 15cm이면 어떤 구간에 해당하나요?</strong></p>
 <details><summary>정답 확인</summary>
 
-`warning` (주의) - 15 이상 30 미만이므로
+🟡 **주의 구간**입니다. `distance < 10`은 거짓(15 ≥ 10), `distance < 20`은 참(15 < 20)이므로 두 번째 `elif` 블록이 실행됩니다.
 
 </details>
 
-<ol>
-<li><strong>임계값을 20cm, 10cm로 바꾸려면 어디를 수정하나요?</strong></li>
-</ol>
+<p><strong>2. "위험 구간에서 소리를 더 급박하게" 만들려면 코드의 어디를 수정해야 하나요?</strong></p>
 <details><summary>정답 확인</summary>
 
-`get_danger_level` 함수의 숫자를 `30→20`, `15→10`으로 변경
+위험 구간의 `delay(100)`을 더 짧게(예: `delay(50)`) 바꾸면 소리 간격이 빨라져 더 급박하게 느껴집니다. 주파수를 `2000`에서 `3000`으로 올리면 더 날카로운 소리도 낼 수 있어요.
+
+</details>
+
+<p><strong>3. 4단계(안전/주의/경고/위험)로 나누려면 어떻게 해야 하나요?</strong></p>
+<details><summary>정답 확인</summary>
+
+임계값을 하나 더 추가하면 됩니다! 예: `if (distance < 5)` → 위험, `else if (distance < 10)` → 경고, `else if (distance < 20)` → 주의, `else` → 안전. 각각 다른 주파수와 간격을 설정하면 완성!
 
 </details>
 
 <hr />
-<h2 id="_9">🔗 다음 장 미리보기<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
-<p>이번 장에서 거리를 단계로 분류하는 법을 배웠어요! 🎉</p>
-<p>다음 장에서는 <strong>실제 하드웨어와 연결</strong>하여 진짜 경보음이 울리는 시스템을 완성해볼 거예요!</p>
+<h2 id="_8">🔗 다음 장 미리보기<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>다음 장에서는 센서 값을 <strong>LCD 화면에 표시</strong>하는 방법을 배워요. 시리얼 모니터가 아닌 실제 화면에 거리와 상태를 보여주면, 진짜 제품 같은 느낌이 나겠죠? 🖥️</p>
 
 
 

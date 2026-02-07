@@ -9,7 +9,7 @@
         <meta name="description" content="라즈베리파이 피코2와 Grove 센서를 활용하여 프로그래밍 기초부터 AI 협업까지, 실생활 문제해결 역량을 키우는 고등학생 맞춤 코딩 입문서입니다.">
       
       
-        <meta name="author" content="Created with Data-AI-Book Generator">
+        <meta name="author" content="Created with EduFlow">
       
       
       
@@ -1297,7 +1297,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        🎯 이 장의 학습 목표
       
     </span>
   </a>
@@ -1306,6 +1306,17 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 미리 알아야 할 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -1317,38 +1328,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exception-handling" class="md-nav__link">
+  <a href="#1-exception" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: 예외 처리 (Exception Handling)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔨 따라하기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: 오류 없이 멈추는 프로그램 (문제 상황)
+        개념 1: 예외(Exception)란?
       
     </span>
   </a>
@@ -1356,10 +1339,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2" class="md-nav__link">
+  <a href="#2-try-except" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 안전망 추가하기
+        개념 2: try-except — 프로그램의 안전망
       
     </span>
   </a>
@@ -1375,10 +1358,60 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📝 전체 코드
+        🔨 따라하기: 센서 오류에 대응하는 프로그램
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기: 센서 오류에 대응하는 프로그램">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 오류가 나는 센서 만들기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-try-except" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: try-except로 안전하게 센서 읽기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 마지막 정상값을 기억하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 오류 횟수 세기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1386,7 +1419,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 주의할 점
+        📝 전체 코드
       
     </span>
   </a>
@@ -1397,7 +1430,7 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 점검하기
+        ⚠️ 주의할 점
       
     </span>
   </a>
@@ -1406,6 +1439,17 @@
       
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔗 다음 장 미리보기
@@ -2111,7 +2155,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        🎯 이 장의 학습 목표
       
     </span>
   </a>
@@ -2120,6 +2164,17 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 미리 알아야 할 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -2131,38 +2186,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#exception-handling" class="md-nav__link">
+  <a href="#1-exception" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: 예외 처리 (Exception Handling)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔨 따라하기
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="🔨 따라하기">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: 오류 없이 멈추는 프로그램 (문제 상황)
+        개념 1: 예외(Exception)란?
       
     </span>
   </a>
@@ -2170,10 +2197,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-2" class="md-nav__link">
+  <a href="#2-try-except" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 안전망 추가하기
+        개념 2: try-except — 프로그램의 안전망
       
     </span>
   </a>
@@ -2189,10 +2216,60 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        📝 전체 코드
+        🔨 따라하기: 센서 오류에 대응하는 프로그램
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="🔨 따라하기: 센서 오류에 대응하는 프로그램">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: 오류가 나는 센서 만들기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-try-except" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: try-except로 안전하게 센서 읽기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: 마지막 정상값을 기억하기
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: 오류 횟수 세기
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2200,7 +2277,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ⚠️ 주의할 점
+        📝 전체 코드
       
     </span>
   </a>
@@ -2211,7 +2288,7 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 점검하기
+        ⚠️ 주의할 점
       
     </span>
   </a>
@@ -2220,6 +2297,17 @@
       
         <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔗 다음 장 미리보기
@@ -2247,106 +2335,213 @@
 
 
 <h1 id="-">예외 처리 - 오류에도 멈추지 않는 프로그램<a class="headerlink" href="#-" title="Permanent link">&para;</a></h1>
-<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="_1">🎯 이 장의 학습 목표<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>이 장을 마치면 다음을 할 수 있습니다:</p>
 <ul>
 <li>[ ] try-except 구문으로 예외를 처리할 수 있다</li>
-<li>[ ] 센서 오류 시 안전하게 대응하는 코드를 작성할 수 있다</li>
+<li>[ ] 오류가 발생해도 멈추지 않는 견고한 프로그램을 작성할 수 있다</li>
 </ul>
+<p><strong>예상 학습 시간: 약 40분</strong></p>
+<h2 id="_2">📚 미리 알아야 할 것<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul>
+<li>함수를 만들고 호출하는 방법 (이전 장에서 학습)</li>
+<li>if-else 조건문의 기본 사용법</li>
+</ul>
+<hr />
+<h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1-exception">개념 1: 예외(Exception)란?<a class="headerlink" href="#1-exception" title="Permanent link">&para;</a></h3>
+<p>프로그램을 실행하다 보면 <strong>예상치 못한 오류</strong>가 발생할 수 있어요. 이걸 <strong>예외(Exception)</strong>라고 합니다.</p>
+<p>먼저 오류가 어떻게 생기는지 직접 봐볼까요?</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># 숫자를 0으로 나누면?</span>
+<span class="n">result</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">/</span> <span class="mi">0</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>ZeroDivisionError: division by zero
+</code></pre></div>
+<p>프로그램이 <strong>즉시 멈춰버립니다.</strong> 이 아래에 아무리 중요한 코드가 있어도 실행되지 않아요.</p>
 <blockquote>
-<p>⏱️ <strong>예상 학습 시간</strong>: 약 15분</p>
+<p>🤔 <strong>생각해보세요</strong>: 센서가 100개 달린 스마트팜에서 센서 1개가 고장났다고 전체 프로그램이 멈춘다면? 농작물 전체가 위험해질 수 있어요!</p>
+</blockquote>
+<h3 id="2-try-except">개념 2: try-except — 프로그램의 안전망<a class="headerlink" href="#2-try-except" title="Permanent link">&para;</a></h3>
+<p><strong>try-except는 마치 안전망과 같아요.</strong></p>
+<p>서커스 공중그네를 생각해보세요. 곡예사가 실수로 떨어져도 아래에 안전망이 있으면 다치지 않죠? try-except가 바로 그 안전망이에요.</p>
+<div class="mermaid">flowchart TD
+    A["try 블록&lt;br/&gt;위험할 수 있는 코드 실행"] --&gt;|성공| B["정상 진행 ✅"]
+    A --&gt;|오류 발생!| C["except 블록&lt;br/&gt;안전망이 받아줌 🛡️"]
+    C --&gt; D["프로그램 계속 실행"]
+    B --&gt; D
+
+    style A fill:#fff3e0,stroke:#f57c00
+    style B fill:#e8f5e9,stroke:#388e3c
+    style C fill:#e3f2fd,stroke:#1976d2
+    style D fill:#e8f5e9,stroke:#388e3c</div>
+<p><strong>정확한 정의</strong>: <code>try</code> 블록 안의 코드를 실행하다 오류가 나면, 프로그램을 멈추지 않고 <code>except</code> 블록의 코드를 대신 실행합니다.</p>
+<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">/</span> <span class="mi">0</span>          <span class="c1"># 오류 발생!</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>             <span class="c1"># 이 줄은 실행 안 됨</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;오류가 발생했습니다!&quot;</span><span class="p">)</span>  <span class="c1"># 안전망이 작동!</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;프로그램은 계속됩니다 😊&quot;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>오류가 발생했습니다!
+프로그램은 계속됩니다 😊
+</code></pre></div>
+<p>프로그램이 <strong>멈추지 않았어요!</strong> 이것이 try-except의 힘입니다.</p>
+<blockquote>
+<p>💡 <strong>잠깐!</strong> 여기까지 이해가 잘 되셨나요?
+try = "시도해봐", except = "실패하면 이렇게 해"로 기억하면 쉬워요!</p>
 </blockquote>
 <hr />
-<h2 id="_2">📚 핵심 개념<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="exception-handling">개념: 예외 처리 (Exception Handling)<a class="headerlink" href="#exception-handling" title="Permanent link">&para;</a></h3>
-<p><strong>비유로 시작해볼게요!</strong></p>
-<p>서커스의 <strong>안전망</strong>을 떠올려 보세요. 곡예사가 줄 위에서 실수해도 안전망 덕분에 다치지 않고 다시 시도할 수 있죠.</p>
-<div class="mermaid">flowchart LR
-    A[코드 실행] --&gt; B{오류 발생?}
-    B --&gt;|No| C[정상 진행]
-    B --&gt;|Yes| D[안전망으로 이동]
-    D --&gt; E[대응 처리]
-    E --&gt; C</div>
-<p><strong>정확한 정의</strong>: <code>try-except</code>는 <strong>오류가 발생해도 프로그램이 멈추지 않게</strong> 해주는 안전망입니다.</p>
-<hr />
-<h2 id="_3">🔨 따라하기<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="step-1">Step 1: 오류 없이 멈추는 프로그램 (문제 상황)<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
-<p><strong>코드</strong>:
-<div class="highlight"><pre><span></span><code><span class="c1"># 센서가 이상한 값을 보내면?</span>
-<span class="n">sensor_value</span> <span class="o">=</span> <span class="s2">&quot;오류&quot;</span>
-<span class="n">temperature</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sensor_value</span><span class="p">)</span>  <span class="c1"># 💥 여기서 멈춤!</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;온도:&quot;</span><span class="p">,</span> <span class="n">temperature</span><span class="p">)</span>
-</code></pre></div></p>
-<p><strong>실행 결과</strong>:
-<div class="highlight"><pre><span></span><code>ValueError: invalid literal for int()...
-프로그램 강제 종료! 😱
-</code></pre></div></p>
-<h3 id="step-2">Step 2: 안전망 추가하기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
-<p><strong>코드</strong>:
-<div class="highlight"><pre><span></span><code><span class="n">sensor_value</span> <span class="o">=</span> <span class="s2">&quot;오류&quot;</span>
-<span class="n">last_good_value</span> <span class="o">=</span> <span class="mi">25</span>  <span class="c1"># 마지막 정상값 저장</span>
+<h2 id="_4">🔨 따라하기: 센서 오류에 대응하는 프로그램<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>스마트팜의 온도 센서가 가끔 고장나는 상황을 시뮬레이션해봅시다. 센서가 오류를 일으켜도 프로그램이 멈추지 않도록 만들어볼게요.</p>
+<h3 id="step-1">Step 1: 오류가 나는 센서 만들기<a class="headerlink" href="#step-1" title="Permanent link">&para;</a></h3>
+<p>센서가 가끔 고장나는 상황을 함수로 만들어요.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
 
-<span class="k">try</span><span class="p">:</span>
-    <span class="n">temperature</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sensor_value</span><span class="p">)</span>
-<span class="k">except</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;⚠️ 센서 오류! 마지막 정상값 사용&quot;</span><span class="p">)</span>
-    <span class="n">temperature</span> <span class="o">=</span> <span class="n">last_good_value</span>
+<span class="k">def</span> <span class="nf">read_temperature_sensor</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;가끔 오류가 나는 온도 센서&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mf">0.3</span><span class="p">:</span>  <span class="c1"># 30% 확률로 고장</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;센서 응답 없음!&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">20.0</span><span class="p">,</span> <span class="mf">30.0</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+<blockquote>
+<p>📝 <code>raise</code>는 일부러 오류를 발생시키는 명령어예요. 실제 센서 고장을 흉내 내는 거죠.</p>
+</blockquote>
+<h3 id="step-2-try-except">Step 2: try-except로 안전하게 센서 읽기<a class="headerlink" href="#step-2-try-except" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="n">read_temperature_sensor</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;현재 온도: </span><span class="si">{</span><span class="n">temp</span><span class="si">}</span><span class="s2">°C&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;⚠️ 센서 오류: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><code>ValueError as e</code>라고 쓰면 오류 메시지를 <code>e</code>에 저장해서 <strong>어떤 오류인지</strong> 확인할 수 있어요.</p>
+<h3 id="step-3">Step 3: 마지막 정상값을 기억하기<a class="headerlink" href="#step-3" title="Permanent link">&para;</a></h3>
+<p>센서가 고장나면 <strong>마지막으로 정상이었던 값</strong>을 사용하는 방법이 실무에서 많이 쓰여요.</p>
+<div class="highlight"><pre><span></span><code><span class="n">last_good_temp</span> <span class="o">=</span> <span class="mf">25.0</span>  <span class="c1"># 초기 기본값</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;온도:&quot;</span><span class="p">,</span> <span class="n">temperature</span><span class="p">)</span>
-</code></pre></div></p>
-<p><strong>실행 결과</strong>:
-<div class="highlight"><pre><span></span><code>⚠️ 센서 오류! 마지막 정상값 사용
-온도: 25
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">read_temperature_sensor</span><span class="p">()</span>
+        <span class="n">last_good_temp</span> <span class="o">=</span> <span class="n">temp</span>  <span class="c1"># 정상값 저장!</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">] ✅ 온도: </span><span class="si">{</span><span class="n">temp</span><span class="si">}</span><span class="s2">°C&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">] ⚠️ 오류! 마지막 정상값 사용: </span><span class="si">{</span><span class="n">last_good_temp</span><span class="si">}</span><span class="s2">°C&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>실행 결과</strong> (매번 다를 수 있어요):
+<div class="highlight"><pre><span></span><code>[1] ✅ 온도: 24.3°C
+[2] ⚠️ 오류! 마지막 정상값 사용: 24.3°C
+[3] ✅ 온도: 27.1°C
+[4] ✅ 온도: 22.8°C
+[5] ⚠️ 오류! 마지막 정상값 사용: 22.8°C
 </code></pre></div></p>
 <blockquote>
-<p>💡 <strong>잠깐!</strong> 프로그램이 멈추지 않고 계속 실행되는 게 보이시나요? 이게 바로 예외 처리의 힘이에요!</p>
+<p>✅ <strong>체크포인트</strong>: 오류가 발생한 줄에서도 프로그램이 멈추지 않고 계속 돌아가나요? 그렇다면 성공이에요!</p>
 </blockquote>
-<hr />
-<h2 id="_4">📝 전체 코드<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="c1"># 센서 읽기 - 안전한 버전</span>
-<span class="n">last_good_value</span> <span class="o">=</span> <span class="mi">25</span>
+<h3 id="step-4">Step 4: 오류 횟수 세기<a class="headerlink" href="#step-4" title="Permanent link">&para;</a></h3>
+<p>몇 번이나 오류가 났는지 기록해두면 센서 교체 시기를 판단할 수 있어요.</p>
+<div class="highlight"><pre><span></span><code><span class="n">last_good_temp</span> <span class="o">=</span> <span class="mf">25.0</span>
+<span class="n">error_count</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="n">sensor_value</span> <span class="o">=</span> <span class="s2">&quot;오류&quot;</span>  <span class="c1"># 실제로는 센서에서 읽어옴</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">read_temperature_sensor</span><span class="p">()</span>
+        <span class="n">last_good_temp</span> <span class="o">=</span> <span class="n">temp</span>
+    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+        <span class="n">error_count</span> <span class="o">+=</span> <span class="mi">1</span>
 
-<span class="k">try</span><span class="p">:</span>
-    <span class="n">temperature</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sensor_value</span><span class="p">)</span>
-    <span class="n">last_good_value</span> <span class="o">=</span> <span class="n">temperature</span>  <span class="c1"># 성공하면 저장</span>
-<span class="k">except</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;⚠️ 센서 오류! 마지막 정상값 사용&quot;</span><span class="p">)</span>
-    <span class="n">temperature</span> <span class="o">=</span> <span class="n">last_good_value</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;현재 온도:&quot;</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="s2">&quot;°C&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;총 오류 횟수: </span><span class="si">{</span><span class="n">error_count</span><span class="si">}</span><span class="s2">회 / 10회&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">error_count</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🔧 센서 점검이 필요합니다!&quot;</span><span class="p">)</span>
 </code></pre></div>
 <hr />
-<h2 id="_5">⚠️ 주의할 점<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>실수</th>
-<th>해결법</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>try:</code> 뒤에 콜론 빼먹음</td>
-<td><code>try:</code> , <code>except:</code> 모두 콜론 필수!</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="_6">✅ 점검하기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<ol>
-<li>try-except는 무엇에 비유할 수 있나요?</li>
-</ol>
-<details><summary>정답 확인</summary>서커스의 안전망 - 실수해도 다치지 않게 보호</details>
+<h2 id="_5">📝 전체 코드<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
 
-<ol>
-<li>센서 오류 시 어떻게 대응하면 좋을까요?</li>
-</ol>
-<details><summary>정답 확인</summary>마지막 정상값을 사용해서 프로그램을 계속 실행</details>
+<span class="k">def</span> <span class="nf">read_temperature_sensor</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;30% 확률로 오류가 나는 온도 센서&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mf">0.3</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;센서 응답 없음!&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">round</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">20.0</span><span class="p">,</span> <span class="mf">30.0</span><span class="p">),</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># 안전한 센서 모니터링</span>
+<span class="n">last_good_temp</span> <span class="o">=</span> <span class="mf">25.0</span>
+<span class="n">error_count</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🌡️ 스마트팜 온도 모니터링 시작!</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">read_temperature_sensor</span><span class="p">()</span>
+        <span class="n">last_good_temp</span> <span class="o">=</span> <span class="n">temp</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">] ✅ 온도: </span><span class="si">{</span><span class="n">temp</span><span class="si">}</span><span class="s2">°C&quot;</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+        <span class="n">error_count</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">] ⚠️ 오류! 마지막 정상값 사용: </span><span class="si">{</span><span class="n">last_good_temp</span><span class="si">}</span><span class="s2">°C&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">📊 결과: 오류 </span><span class="si">{</span><span class="n">error_count</span><span class="si">}</span><span class="s2">회 / 총 10회&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">error_count</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;🔧 센서 점검이 필요합니다!&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ 센서 상태 양호합니다.&quot;</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="_6">⚠️ 주의할 점<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p><strong>1. except만 쓰면 모든 오류를 삼켜버려요!</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># ❌ 나쁜 예 - 어떤 오류인지 알 수 없음</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">something</span><span class="p">()</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="k">pass</span>  <span class="c1"># 아무것도 안 함 → 문제를 숨겨버림!</span>
+
+<span class="c1"># ✅ 좋은 예 - 어떤 오류인지 명시</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">something</span><span class="p">()</span>
+<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;값 오류가 발생했습니다&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>2. try 블록은 최소한으로!</strong></p>
+<p>위험한 코드 <strong>한두 줄만</strong> try 안에 넣으세요. 전체 프로그램을 try로 감싸면 어디서 오류가 났는지 찾기 어려워요.</p>
+<hr />
+<h2 id="_7">✅ 점검하기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<p><strong>1. 다음 코드의 출력 결과는?</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">0</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;D&quot;</span><span class="p">)</span>
+</code></pre></div>
+<details><summary>정답 확인</summary>
+
+<div class="highlight"><pre><span></span><code>A
+C
+D
+</code></pre></div>
+
+"A"를 출력한 후 `1/0`에서 오류 → "B"는 건너뜀 → except의 "C" 실행 → 프로그램 계속되어 "D" 출력
+
+</details>
+
+<p><strong>2. 센서 오류 시 마지막 정상값을 사용하는 이유는?</strong></p>
+<details><summary>정답 확인</summary>
+
+프로그램이 멈추지 않으면서도 **합리적인 값**으로 계속 동작하기 위해서입니다. 아무 값도 없는 것보다 가장 최근의 정상 데이터를 쓰는 것이 더 안전하기 때문이에요.
+
+</details>
+
+<p><strong>3. try 블록 안에 너무 많은 코드를 넣으면 안 되는 이유는?</strong></p>
+<details><summary>정답 확인</summary>
+
+어디서 오류가 발생했는지 찾기 어려워지기 때문입니다. 오류가 날 수 있는 코드만 최소한으로 try 안에 넣어야 디버깅이 쉬워요.
+
+</details>
 
 <hr />
-<h2 id="_7">🔗 다음 장 미리보기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<p>예외 처리로 안전한 코드를 배웠어요! 다음 장에서는 <strong>함수 기초</strong>를 배워 코드를 깔끔하게 정리하는 방법을 알아봅니다. 🎯</p>
+<h2 id="_8">🔗 다음 장 미리보기<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>다음 장에서는 <strong>파일 입출력</strong>을 배워요. 센서 데이터를 파일에 저장하고, 저장된 데이터를 다시 불러오는 방법을 익히게 됩니다. 오늘 배운 예외 처리가 파일을 다룰 때도 아주 유용하게 쓰인답니다! 📁</p>
 
 
 
